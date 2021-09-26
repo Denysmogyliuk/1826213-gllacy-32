@@ -21,7 +21,7 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-phone">
-            <input type="tel" value="7 800 555-86-28" disabled />
+            <a href="tel:+7 800 555-86-28">7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
             <a href="#">Поиск</a>
@@ -118,7 +118,7 @@
               Сливочное мороженое с малиновым джемом
             </p>
             <b class="popular-price">310 ₽/кг</b>
-            <button class="btn choice-basket">В корзину</button>
+            <button class="btn choice-basket" type="button">В корзину</button>
           </li>
           <li class="popular-item">
             <img src="1.jpg" alt="Мороженное Фисташка" />
@@ -127,14 +127,14 @@
               Фисташковый пломбир с кусочками шоколада
             </p>
             <b class="popular-price">340 ₽/кг</b>
-            <button class="btn choice-basket">В корзину</button>
+            <button class="btn choice-basket" type="button">В корзину</button>
           </li>
           <li class="popular-item">
             <img src="1.jpg" alt="Мороженное Черника" />
             <h3 class="popular-item">Черника</h3>
             <p class="popular-description">Крем-брюле с черничным джемом</p>
             <b class="popular-price">330 ₽/кг</b>
-            <button class="btn choice-basket">В корзину</button>
+            <button class="btn choice-basket" type="button">В корзину</button>
           </li>
           <li class="popular-item">
             <img src="1.jpg" alt="Мороженное Бабл-гам" />
@@ -143,7 +143,7 @@
               Ванильный пломбир со сладкой посыпкой
             </p>
             <b class="popular-price">320 ₽/кг</b>
-            <button class="btn choice-basket">В корзину</button>
+            <button class="btn choice-basket" type="button">В корзину</button>
           </li>
         </ul>
       </section>
@@ -185,7 +185,7 @@
 
       <section class="news">
         <h3 class="news-header">Новое в нашем блоге</h3>
-        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        <a class="news-title" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section class="subscribe">
         <h3 class="visually-hidden">Подписка</h3>
@@ -256,42 +256,46 @@
               name="delivery-adress"
               placeholder="ул. Большая Конюшенная, 19/8"
             />
-            <button type="submit">Отправить</button>
+            <button class="delivery-submit" type="submit">Отправить</button>
           </form>
         </section>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p>Адрес главного офиса и офлайн-магазина:</p>
+        <p class="contact-adress-item">Адрес главного офиса и офлайн-магазина:</p>
         <strong class="address-page">
           наб. Реки Карповки, 5 лит П, Санкт-Петербург
         </strong>
-        <plabel for="contacts-phone">Для заказов по телефону:</plabel>
-        <input
-          type="tel"
-          name="phone"
-          id="contacts-phone"
-          value="+7(812 812-12-12)"
-          disabled
-        />
-        <button>Форма обратной связи</button>
+        <p class="contacts-phone-item">Для заказов по телефону:</p>
+        <a class="contacts-phone" href="tel:+7(812 812-12-12)">
+        <button class="contacts-button" type="submit">Форма обратной связи</button>
       </section>
     </main>
 
     <footer class="footer">
-      <ul class="socials">
-        <li class="social">
-          <a href="vk.com/htmlacademy">VK</a>
-        </li>
-        <li class="social">
-          <a href="facebook.com/htmlacademy">Facebook</a>
-        </li>
-        <li class="social">
-          <a href="instagram.com/htmlacademy">Instagram</a>
-        </li>
-      </ul>
-      <ul class="info-list">
+      <section class="footer-social">
+        <h2 class="page-footer-title">Давайте дружить</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="vk.com/htmlacademy">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="facebook.com/htmlacademy">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="instagram.com/htmlacademy">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-features">
+        <ul class="info-list">
         <li class="info-item">
           <a href="#" class="info-item-link">Для поставщиков</a>
         </li>
@@ -305,6 +309,7 @@
           <a href="#" class="info-item-link">Экологические стандарты</a>
         </li>
       </ul>
+    </section>
       <div class="copyright">
         <img src="#" alt="Копирайт" class="logo" />
         <p class="copyright-text">
