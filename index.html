@@ -7,9 +7,11 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list-сatalog">
           <li class="header-logo">
-            <img src="#" alt="Логотип магазина Глейси" class="header-logo" />
+            <a href="#"
+              ><img src="#" alt="Логотип магазина Глейси" class="header-logo"
+            /></a>
           </li>
           <li class="navigation-catalog">
             <a href="catalog.html">Каталог</a>
@@ -23,16 +25,16 @@
         </ul>
         <ul class="navigation-list-user">
           <li class="navigation-phone">
-            <a href="tel:+78005558628">7 800 555-86-28</a>
+            <a class="header-phone" href="tel:+78005558628">7 800 555-86-28</a>
           </li>
           <li class="navigation-search">
-            <a href="#">Поиск</a>
+            <button class="search-button">Поиск</button>
           </li>
           <li class="navigation-login">
-            <a href="#">Вход</a>
+            <button class="login-button">Вход</button>
           </li>
           <li class="navigation-bucket">
-            <a href="#">Корзина</a>
+            <button class="bucket-button">Корзина</button>
           </li>
         </ul>
       </nav>
@@ -41,48 +43,39 @@
     <main class="main-index">
       <h1 class="visually-hidden">Глейси Шоп</h1>
       <section class="slider-container">
-        <ul>
-          <li class="slider-item">
-            <article>
-              <div>
-                <h2>Нежный пломбир с клубничным джемом</h2>
-                <p>
-                  Натуральное мороженое из свежих сливок и молока с вкуснейшим
-                  клубничным джемом - это идеальный десерт для всей семьи.
-                </p>
-                <button type="submit"></button>
-              </div>
-              <img src="#" alt="Клубничное мороженое" />
-            </article>
-          </li>
-          <li class="slider-item">
-            <article>
-              <div>
-                <h2>Сливочное мороженое со вкусом банана</h2>
-                <p>
-                  Сливочное мороженое с ярким банановым вкусом подарит вам
-                  свежесть и наслаждение в самый жаркий летний день.
-                </p>
-                <button></button>
-              </div>
-              <img src="#" alt="Банановое мороженое" />
-            </article>
-          </li>
-          <li class="slider-item">
-            <article>
-              <div>
-                <h2>Карамельный пломбир с маршмеллоу</h2>
-                <p>
-                  Необычный сладкий дессерт с карамельным топпингом и
-                  кусочкамизефира завоюет сердца сладкоежек всех возрастов.
-                </p>
-                <button></button>
-              </div>
-              <img src="№" alt="Пломбир с маршмеллоу" />
-            </article>
-          </li>
-        </ul>
+        <article class="slider-item">
+          <div>
+            <h2>Нежный пломбир с клубничным джемом</h2>
+            <p>
+              Натуральное мороженое из свежих сливок и молока с вкуснейшим
+              клубничным джемом - это идеальный десерт для всей семьи.
+            </p>
+            <button type="submit">Заказать</button>
+          </div>
+          <button class="main-button-prev"></button>
+          <img src="#" alt="Клубничное мороженое" />
+          <button class="main-button-next"></button>
+        </article>
+        <section class="main-radiobutton">
+          <ul class="main-radibutton-list">
+            <li class="main-radiobutton-1"><a href="#">1</a></li>
+            <li class="main-radiobutton-2"><a href="#">2</a></li>
+            <li class="main-radiobutton-3"><a href="#">3</a></li>
+          </ul>
+        </section>
+        <sections class="socials">
+          <a class="social-vk" href="https://vk.com/htmlacademy">ВК</a>
+          <a class="social-fb" href="https://www.facebook.com/htmlacademy"
+            >ФБ</a
+          >
+          <a
+            class="social-instagram"
+            href="https://www.instagram.com/htmlacademy"
+            >Инстаграм</a
+          >
+        </sections>
       </section>
+
       <section class="donates">
         <h2 class="donates">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="donates-list">
