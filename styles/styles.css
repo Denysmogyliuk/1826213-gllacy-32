@@ -82,19 +82,29 @@ body {
   background-repeat: no-repeat;
 }
 .button {
-  background-color: #rgba(252, 252, 252, 1);
   font-family: "inter Bold";
-  color: 2d3440;
+  font-weight: bold;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
   border-radius: 26px;
-  border: 4px solid rgba(252, 252, 252, 0, 4);
-  height: 36px;
-  width: 122px;
+  border: none;
+}
+.login-button,
+.bucket-button,
+.search-button {
+  background-color: rgba(252, 252, 252, 0.3);
+  height: 32px;
+}
+.slider-submit {
+  background: #fcfcfc;
+
+  width: 139px;
+  height: 44px;
 }
 .navigation-list-catalog: {
 }
 .popular-list {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
 }
