@@ -18,13 +18,13 @@
         /></a>
         <ul class="navigation-list-сatalog">
           <li class="navigation-item">
-            <a class="navigation-ref" href="catalog.html">Каталог</a>
+            <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-ref" href="#">Доставка и оплата</a>
+            <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-ref" href="#">О компании</a>
+            <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
         <ul class="navigation-list-user">
@@ -43,7 +43,7 @@
         </ul>
       </nav>
     </header>
-
+    <!-- слайдер -->
     <main class="main-index">
       <h1 class="visually-hidden">Глейси Шоп</h1>
       <section class="slider-container">
@@ -56,16 +56,18 @@
               Натуральное мороженое из свежих сливок и молока с вкуснейшим
               клубничным джемом - это идеальный десерт для всей семьи.
             </p>
-            <button class="button slider-submit" type="submit">Заказать</button>
+            <button class="button slider-submit-button" type="submit">
+              Заказать
+            </button>
           </div>
-          <button class="main-button-prev"></button>
+          <button class="main-button-prev">Назад</button>
           <img
             src="Image/strawberry-slider.png"
             alt="Клубничное мороженое"
             width="306"
             height="507"
           />
-          <button class="main-button-next"></button>
+          <button class="main-button-next">Вперед</button>
         </article>
         <section class="main-radiobutton">
           <ul class="main-radibutton-list">
@@ -86,7 +88,7 @@
           >
         </section>
       </section>
-
+      <!-- подарки -->
       <section class="donates">
         <h2 class="donates-header">
           Заказывайте мороженое и получайте подарки!
@@ -119,7 +121,7 @@
           </li>
         </ul>
       </section>
-
+      <!-- популярные позиции -->
       <section class="popular">
         <h2 class="popular-header">
           Попробуйте самые популярные вкусы нашего мороженого
@@ -127,7 +129,7 @@
         <ul class="popular-list">
           <li class="popular-item">
             <img src="image/catalog/photo-1.png" alt="Мороженное Малинка" />
-            <h3 class="popular-item">Малинка</h3>
+            <h3 class="popular-item-header">Малинка</h3>
             <p class="popular-description">
               Сливочное мороженое с малиновым джемом
             </p>
@@ -138,7 +140,7 @@
           </li>
           <li class="popular-item">
             <img src="image/catalog/photo-2.png" alt="Мороженное Фисташка" />
-            <h3 class="popular-item">Фисташка</h3>
+            <h3 class="popular-item-header">Фисташка</h3>
             <p class="popular-description">
               Фисташковый пломбир с кусочками шоколада
             </p>
@@ -149,7 +151,7 @@
           </li>
           <li class="popular-item">
             <img src="image/catalog/photo-3.png" alt="Мороженное Черника" />
-            <h3 class="popular-item">Черника</h3>
+            <h3 class="popular-item-header">Черника</h3>
             <p class="popular-description">Крем-брюле с черничным джемом</p>
             <b class="popular-price">330 ₽/кг</b>
             <button class="btn choice-basket" type="button">
@@ -158,7 +160,7 @@
           </li>
           <li class="popular-item">
             <img src="image/catalog/photo-4.png" alt="Мороженное Бабл-гам" />
-            <h3 class="popular-item">Бабл-гам</h3>
+            <h3 class="popular-item-header">Бабл-гам</h3>
             <p class="popular-description">
               Ванильный пломбир со сладкой посыпкой
             </p>
@@ -169,6 +171,7 @@
           </li>
         </ul>
       </section>
+      <!-- преимущества -->
       <section class="features">
         <h2 class="features-header">
           Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
@@ -176,7 +179,7 @@
         </h2>
         <ul class="features-list">
           <li class="features-item">
-            Все наше мороженое изгатавливается на собственном производстве, с
+            Все наше мороженое изготавливается на собственном производстве, с
             использованием современного оборудования и проверенных временем
             технологий.
           </li>
@@ -196,13 +199,14 @@
           </li>
         </ul>
       </section>
-
+      <!-- новости -->
       <section class="news">
         <h3 class="news-header">Новое в нашем блоге</h3>
         <a class="news-title" href="#"
           >10 способов сервировки фруктовых щербетов к столу</a
         >
       </section>
+      <!-- подписка -->
       <section class="subscribe">
         <h3 class="visually-hidden">Подписка</h3>
         <p class="subscribe-description">
@@ -230,6 +234,7 @@
           </button>
         </form>
       </section>
+      <!-- доставка -->
       <section class="delivery">
         <h2 class="delivery-header">Доставка любимого мороженого на дом</h2>
         <p class="delivery-description">
@@ -249,7 +254,7 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label for="delivery-date">Дата</label>
+            <label class="delivery-form-date" for="delivery-date">Дата</label>
 
             <input
               type="text"
@@ -258,7 +263,9 @@
               placeholder="01.04.2020"
             />
 
-            <label for="delivery-phone">Телефон</label>
+            <label class="delivery-form-phone" for="delivery-phone"
+              >Телефон</label
+            >
             <input
               type="text"
               id="delivery-phone"
@@ -266,7 +273,9 @@
               placeholder="+7 (800) 999-00-00"
             />
 
-            <label for="delivery-adress">Адрес</label>
+            <label class="delivery-form-address" for="delivery-adress"
+              >Адрес</label
+            >
 
             <input
               type="text"
@@ -280,25 +289,27 @@
           </form>
         </section>
       </section>
-
+      <!-- контакты -->
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts-container">
+          <h2 class="visually-hidden">Контакты</h2>
 
-        <p class="contacts-adress-item">
-          Адрес главного офиса и офлайн-магазина:
-        </p>
-        <address class="footer-contacts-address">
-          <strong class="address-page">
-            наб. Реки Карповки, 5 лит П, Санкт-Петербург
-          </strong>
-        </address>
+          <p class="contacts-adress-item">
+            Адрес главного офиса и офлайн-магазина:
+          </p>
+          <address class="contacts-address">
+            <p class="address-page">
+              наб. Реки Карповки, 5 лит П, Санкт-Петербург
+            </p>
+          </address>
 
-        <p class="contacts-phone-item">Для заказов по телефону:</p>
-        <a class="contacts-phone" href="tel:78128121212">+7(812) 812-12-12</a>
-        <p class="contacts-phone-worktime">(с 10 до 20 ежедневно)</p>
-        <button class="button contacts-button" type="submit">
-          Форма обратной связи
-        </button>
+          <p class="contacts-phone-item">Для заказов по телефону:</p>
+          <a class="contacts-phone" href="tel:78128121212">+7(812) 812-12-12</a>
+          <p class="contacts-phone-worktime">(с 10 до 20 ежедневно)</p>
+          <button class="button contacts-button" type="submit">
+            Форма обратной связи
+          </button>
+        </div>
       </section>
     </main>
 
@@ -326,7 +337,7 @@
       <section class="footer-features">
         <ul class="info-list">
           <li class="info-item">
-            <a href="#" class="info-item-link">Для поставщиков</a>
+            <a href="#" class="info-item-link-bold">Для поставщиков</a>
           </li>
           <li class="info-item">
             <a href="#" class="info-item-link">Наши документы</a>
@@ -340,15 +351,17 @@
         </ul>
       </section>
       <div class="copyright">
-        <img
-          src="Image/logo_htmlacademy.svg"
-          alt="Логотип HTML Academy"
-          class="logo"
-          width="93"
-          height="27"
-        />
+        <a href="www.htmlacademy.ru"
+          ><img
+            src="Image/logo_htmlacademy.svg"
+            alt="Логотип HTML Academy"
+            class="logo"
+            width="93"
+            height="27"
+          />
+        </a>
         <p class="copyright-text">
-          Сделано в <a href="htmlacademy.ru">.html academy &#169; 2021</a>
+          Сделано в <a href="www.htmlacademy.ru">.html academy &#169; 2021</a>
         </p>
       </div>
     </footer>

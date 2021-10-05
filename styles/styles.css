@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "sans-serif";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -34,7 +34,7 @@ body {
   display: none;
 }
 
-.navigation-ref {
+.navigation-link {
   font-family: "Inter", sans-serif;
   line-height: 16px;
   line-height: 20px;
@@ -71,7 +71,7 @@ body {
   line-height: 24px;
 }
 .donates-header {
-  font-family: "Inter Bold";
+  font-family: "Inter Bold, sans-serif";
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -92,7 +92,7 @@ body {
   background-repeat: no-repeat;
 }
 .button {
-  font-family: "inter Bold";
+  font-family: "inter Bold", sans-serif;
   font-weight: bold;
   font-size: 16px;
   font-weight: 700;
@@ -107,14 +107,115 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   height: 32px;
 }
-.slider-submit {
+.main-slider-item {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.slider-submit-button {
   background: #fcfcfc;
 
   width: 139px;
   height: 44px;
 }
-.navigation-list-catalog: {
+
+.popular-item-header {
+  font-family: "inter Bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
-.popular-item {
+.popular-description {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.popular-price {
+  font-family: "inter Bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.slider-submit-button {
+  background: #fcfcfc;
+
+  width: 139px;
+  height: 44px;
+}
+
+.popular-item,
+.catalog-item {
   background-color: #fcfcfc;
+}
+.features {
+  background-image: url("../Image/Backgrounds/vaffle-background.png");
+  background-repeat: no-repeat;
+}
+.subscribe {
+  background-image: url("../Image/Backgrounds/Post.png");
+  background-repeat: no-repeat;
+}
+.delivery-form-date,
+.delivery-form-phone,
+.delivery-form-address {
+  font-weight: 700;
+}
+.delivery {
+  background-image: url("../Image/Backgrounds/delivery.png");
+  background-repeat: no-repeat;
+}
+.delvery-form-container {
+  background-color: #fcfcfc;
+}
+.contacts {
+  background-image: url("../Image/Backgrounds/contacts.png");
+  background-repeat: no-repeat;
+}
+.contacts-phone,
+.contacts-address {
+  font-style: "Inter-bold", "sans-serif";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2d3440;
+}
+.pagination-link {
+  font-family: "Inter", sans-serif;
+  line-height: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #2d3440;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.info-item-link {
+  font-style: "Inter", "sans-serif";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+}
+.info-item-link-bold {
+  font-style: "Inter-bold", "sans-serif";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+}
+.copyright-text,
+.copyright-text a {
+  font-style: "Inter", "sans-serif";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  color: #2d3440;
 }
