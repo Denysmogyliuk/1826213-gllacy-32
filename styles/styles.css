@@ -23,20 +23,21 @@
 }
 
 body {
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #2d3440;
   background-color: #feafc3;
 }
+
 .visually-hidden {
   display: none;
 }
 
 .navigation-link {
   font-family: "Inter", sans-serif;
-  line-height: 16px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
@@ -44,6 +45,7 @@ body {
   text-decoration: none;
   text-transform: none;
 }
+
 .header-phone {
   font-family: "Inter Bold", sans-serif;
   font-weight: 700;
@@ -52,45 +54,74 @@ body {
   text-decoration: none;
   text-transform: none;
 }
-.main-slider-header,
-.donates-header,
-.popular-header,
-.features-header,
-.delivery-header {
-  font-family: "Inter Bolder";
-  fint-style: bolder;
+
+.main-slider-header {
+  font-family: "Inter Bolder", sans-serif;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 }
 
+.inner-catalog-item {
+  font-family: "Inter Bolder", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.breadcrumbs-link {
+  font-family: "Inter Bold", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.filters-form {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.popular-header,
+.features-header,
+.delivery-header,
+.donates-header {
+  font-family: "Inter Bolder", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
 .main-slider-item {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
 }
-.donates-header {
-  font-family: "Inter Bold, sans-serif";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
+
 .donates-raspberry {
   background-color: #ff7799;
   background-image: url("../Image/Backgrounds/raspberry-donates.png");
   background-repeat: no-repeat;
 }
+
 .donates-marshmellow {
   background-color: #ff7799;
   background-image: url("../Image/Backgrounds/marshmellow-donate.png");
   background-repeat: no-repeat;
 }
+
 .news {
   background-color: #fcfcfc;
   background-image: url("../Image/Backgrounds/news.png");
   background-repeat: no-repeat;
 }
+
 .button {
   font-family: "inter Bold", sans-serif;
   font-weight: bold;
@@ -101,18 +132,21 @@ body {
   border-radius: 26px;
   border: none;
 }
+
 .login-button,
 .bucket-button,
 .search-button {
   background-color: rgba(252, 252, 252, 0.3);
   height: 32px;
 }
+
 .main-slider-item {
   font-family: "inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
+
 .slider-submit-button {
   background: #fcfcfc;
 
@@ -126,18 +160,21 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+
 .popular-description {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
+
 .popular-price {
-  font-family: "inter Bold", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
+
 .slider-submit-button {
   background: #fcfcfc;
 
@@ -149,10 +186,12 @@ body {
 .catalog-item {
   background-color: #fcfcfc;
 }
+
 .features {
   background-image: url("../Image/Backgrounds/vaffle-background.png");
   background-repeat: no-repeat;
 }
+
 .subscribe {
   background-image: url("../Image/Backgrounds/Post.png");
   background-repeat: no-repeat;
@@ -162,20 +201,24 @@ body {
 .delivery-form-address {
   font-weight: 700;
 }
+
 .delivery {
   background-image: url("../Image/Backgrounds/delivery.png");
   background-repeat: no-repeat;
 }
+
 .delvery-form-container {
   background-color: #fcfcfc;
 }
+
 .contacts {
   background-image: url("../Image/Backgrounds/contacts.png");
   background-repeat: no-repeat;
 }
+
 .contacts-phone,
 .contacts-address {
-  font-style: "Inter-bold", "sans-serif";
+  font-style: "Inter-bold", sans-serif;
   font-style: normal;
   font-size: 20px;
   font-weight: 700;
@@ -183,6 +226,7 @@ body {
   text-decoration: none;
   color: #2d3440;
 }
+
 .pagination-link {
   font-family: "Inter", sans-serif;
   line-height: 16px;
@@ -195,24 +239,26 @@ body {
 }
 
 .info-item-link {
-  font-style: "Inter", "sans-serif";
+  font-style: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
 }
+
 .info-item-link-bold {
-  font-style: "Inter-bold", "sans-serif";
+  font-style: "Inter-bold", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
 }
+
 .copyright-text,
 .copyright-text a {
-  font-style: "Inter", "sans-serif";
+  font-style: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
