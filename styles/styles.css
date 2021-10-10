@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "Inter Bold";
+  font-family: "Inter";
   font-style: bold;
   font-weight: 700;
   src: url("../fonts/inter-700.woff2") format("woff2");
@@ -15,28 +15,59 @@
 }
 
 @font-face {
-  font-family: "Inter Bolder";
+  font-family: "Inter";
   font-style: bolder;
   font-weight: 900;
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #2d3440;
   background-color: #feafc3;
+  width: 1366px;
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.navigation {
+  display: flex;
+  width: 1170px;
+}
+
+.navigation-list-сatalog {
+  width: 400px;
+}
+
+.navigation-list-user {
+  width: 420px;
+  margin-left: auto;
+}
+
+.main-container {
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .navigation-link {
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -47,7 +78,6 @@ body {
 }
 
 .header-phone {
-  font-family: "Inter Bold", sans-serif;
   font-weight: 700;
   line-height: 20px;
   color: #2d3440;
@@ -56,21 +86,18 @@ body {
 }
 
 .main-slider-header {
-  font-family: "Inter Bolder", sans-serif;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 }
 
 .inner-catalog-item {
-  font-family: "Inter Bolder", sans-serif;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
 }
 
 .breadcrumbs-link {
-  font-family: "Inter Bold", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
@@ -79,7 +106,6 @@ body {
 }
 
 .filters-form {
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -91,17 +117,30 @@ body {
 .features-header,
 .delivery-header,
 .donates-header {
-  font-family: "Inter Bolder", sans-serif;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
 }
 
 .main-slider-item {
-  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
+}
+
+.donates {
+  display: flex;
+  flex-direction: column;
+}
+
+.donates-list {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+}
+
+.donates-item {
+  width: 570px;
 }
 
 .donates-raspberry {
@@ -120,10 +159,24 @@ body {
   background-color: #fcfcfc;
   background-image: url("../Image/Backgrounds/news.png");
   background-repeat: no-repeat;
+  width: 570px;
+}
+
+.news-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.news-subscribe-container {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
 }
 
 .button {
-  font-family: "inter Bold", sans-serif;
   font-weight: bold;
   font-size: 16px;
   font-weight: 700;
@@ -141,7 +194,6 @@ body {
 }
 
 .main-slider-item {
-  font-family: "inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -154,22 +206,32 @@ body {
   height: 44px;
 }
 
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-item {
+  width: 270px;
+  margin: 0;
+}
+
 .popular-item-header {
-  font-family: "inter Bold", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
 .popular-description {
-  font-family: "inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
 
 .popular-price {
-  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -177,7 +239,6 @@ body {
 
 .slider-submit-button {
   background: #fcfcfc;
-
   width: 139px;
   height: 44px;
 }
@@ -191,10 +252,20 @@ body {
   background-image: url("../Image/Backgrounds/vaffle-background.png");
   background-repeat: no-repeat;
 }
-
+.features-container {
+  background-color: #fcfcfc;
+  margin: 25px;
+  /*  маргин для проверки */
+}
 .subscribe {
   background-image: url("../Image/Backgrounds/Post.png");
   background-repeat: no-repeat;
+  width: 570px;
+}
+.subscribe-container {
+  background-color: #fcfcfc;
+  margin: 25px;
+  /* маргин для проверки */
 }
 .delivery-form-date,
 .delivery-form-phone,
@@ -218,7 +289,6 @@ body {
 
 .contacts-phone,
 .contacts-address {
-  font-style: "Inter-bold", sans-serif;
   font-style: normal;
   font-size: 20px;
   font-weight: 700;
@@ -228,7 +298,6 @@ body {
 }
 
 .pagination-link {
-  font-family: "Inter", sans-serif;
   line-height: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -248,7 +317,6 @@ body {
 }
 
 .info-item-link-bold {
-  font-style: "Inter-bold", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -258,7 +326,6 @@ body {
 
 .copyright-text,
 .copyright-text a {
-  font-style: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
