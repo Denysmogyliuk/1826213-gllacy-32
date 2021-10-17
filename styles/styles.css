@@ -37,9 +37,12 @@ body {
   line-height: 22px;
   color: #2d3440;
   background-color: #feafc3;
-  width: 1366px;
-}
 
+}
+.wrapper {
+margin: 0 auto;
+max-width: 1170px;
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -47,22 +50,34 @@ body {
   height: 1px;
   margin: -1px;
 }
+
 .button {
-  font-family: "Inter"
-  font-weight: bold;
-  font-size: 16px;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
+  font-style: bold;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
   border-radius: 26px;
-  border: none;
+  padding: 12px 32px;
+}
+
+.button-red {
+  color: #FCFCFC;
+background-color: #FF2F64;
+border: 4px solid #FEAFC3;
+}
+.button-white {
+  color: #2D3440;
+  background-color: #FCFCFC;
+  border: 4px solid #FEAFC3;
 }
 
 .login-button,
 .bucket-button,
 .search-button {
   background-color: rgba(252, 252, 252, 0.3);
-  height: 32px;
+
 }
 
 .navigation {
@@ -103,10 +118,10 @@ body {
   list-style-type: none;
 }
 
-.page-container {
+/* .page-container {
   width: 1170px;
   margin: 0 auto;
-}
+} */
 
 .main-container {
   flex-grow: 1;
@@ -170,8 +185,6 @@ list-style-type: none;
   font-weight: 700;
   color: #2d3440;
   text-decoration: none;
-
-
 }
 
 .filters-form {
@@ -201,6 +214,7 @@ list-style-type: none;
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
+
 }
 
 .donates-header {
@@ -211,31 +225,29 @@ list-style-type: none;
 }
 
 .donates-list {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
-
   justify-content: space-between;
 }
 
 .donates-item {
   margin: 0;
   padding: 0;
-  width: 570px;
   list-style-type: none;
-
+  width: 570px;
 }
 
 .donates-title {
-  margin: 40px auto 16px 40px;
+  margin: 0;
   font-size: 24px;
   Line height: 30px;
   font-style: bold;
 }
 
 .donates-description {
-  width: 320px;
-  margin: 0 auto 32px 40px;
+  width: 380px;
+
 }
 
 .donates-item-container {
@@ -244,32 +256,21 @@ list-style-type: none;
   align-items: start;
   background-color: #ff7799;
   border-radius:16px;
-
-  width: 100%;
+  padding: 40px;
 }
 
-.donates-button {
-  margin: 0 auto 40px 40px;
-  width: 184px;
-  height: 52px;
-  border: 4px solid #FEAFC3;
 
-}
-.donates-button-text {
-  font-family: "Inter";
-  line-height: 20px;
-  font-style: bold;;
-}
+
+
+
+
 .donates-raspberry {
-
-
   background-image: url("../Image/Backgrounds/raspberry-donates.png");
   background-repeat: no-repeat;
   background-position: bottom 0px right 15px;
 }
 
 .donates-marshmellow {
-
   background-image: url("../Image/Backgrounds/marshmellow-donate.png");
   background-repeat: no-repeat;
   background-position: bottom 0px right 7px;
@@ -277,32 +278,34 @@ list-style-type: none;
 
 .news {
 display: flex;
+align-items: start;
 flex-direction: column;
   background-image: url("../Image/Backgrounds/news.png");
   background-repeat: no-repeat;
-  width: 570px;
+  width: 506px;
+  padding: 32px;
 }
 
 .news-header {
-margin: 32px auto 12px 32px;
+margin-bottom: 12px;
 color: #565C66;
 font-size: 16px;
 font-weight: 400;
+
 }
 
 .news-title {
-  margin: 0 auto 62px 32px;
+width: 305px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #2d3440;
   text-decoration: none;
-  width: 303px;
+margin: 0;
 }
 
 .news-subscribe-container {
   display: flex;
-
   justify-content: space-between;
   margin-bottom: 80px;
 }
@@ -314,7 +317,6 @@ font-weight: 400;
   line-height: 24px;
 }
 
-
 .popular {
 margin-bottom: 80px;
 }
@@ -325,23 +327,26 @@ margin-bottom: 80px;
   text-align: center;
 
 }
+
 .popular-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   margin: 51px auto 60px auto;;
   padding: 0;
 }
+
 .inner-catalog-item-header {
   margin: 0 auto 40px 0;
 }
+
 .catalog-item {
   display: flex;
   flex-direction: column;
@@ -411,9 +416,8 @@ margin-bottom: 20px;
 .slider-submit-button {
   color: #2D3440;
   background-color: #FCFCFC;
-  width: 194px;
-  height: 52px;
-  border: 4px solid black;
+
+  border: 4px solid rgba(252, 252, 252, 0.4);
 }
 
 .popular-item,
@@ -428,27 +432,42 @@ margin-bottom: 20px;
   min-height: 480px;
   background-image: url("../Image/Backgrounds/vaffle-background.png");
   background-repeat: no-repeat;
-
   margin-bottom: 80px;
+
 }
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fcfcfc;
+  margin: 24px;
+  border-radius: 16px;
+  padding: 60px;
+}
+
 
 .features-header {
   text-align: center;
-}
-.features-list {
   margin: 0;
+  margin-bottom: 15px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .features-item {
   list-style-type: none;
   color: #565C66;
+  width: 442px;
 }
 
-.features-container {
-  background-color: #fcfcfc;
-  margin: 24px;
-  border-radius: 16px;
-}
 
 .subscribe {
   display: flex;
@@ -456,11 +475,12 @@ margin-bottom: 20px;
   background-repeat: no-repeat;
   width: 570px;
   min-height: 220px;
+
 }
 
 .subscribe-description {
-  margin: 26px 26px 42px 26px;
   color: #565C66;
+  margin: 0 0 40px 0;
 }
 
 .subscribe-container {
@@ -468,29 +488,25 @@ margin-bottom: 20px;
   flex-direction: column;
   background-color: #fcfcfc;
   margin: 6px;
+  padding: 26px;
   border-radius: 16px;
 }
 
 .subscribe-form {
-margin: 0 auto 26px 26px;
+margin: 0;
 }
 
 .subscribe-input {
   width: 332px;
-  height: 48px;
+  height: 46px;
+  padding: 0;
   border-radius: 4px;
   border: 1px solid #B9B9B9;
   color: red;
+
 }
 
-.subscribe-button {
-  margin-left: 20px;
-  color: #FCFCFC;
-  height: 52px;
-  width: 160px;
-  background-color: #FF2F64;
-  border: 4px solid #FEAFC3;
-}
+
 
 .delivery-form-date,
 .delivery-form-phone,
@@ -530,8 +546,7 @@ font-weight: 700;
 
 .delivery-submit-button {
   color: #FCFCFC;
-  height: 52px;
-  width: 160px;
+
   background-color: #FF2F64;
   border: 4px solid #FEAFC3;
 }
@@ -563,40 +578,47 @@ font-weight: 700;
  border-radius: 8px;
  margin: 64px auto 64px 64px;
  width: 343px;
+ padding: 40px;
 }
 
 .contacts-adress-item {
   color: #565C66;
-  width: 180px;
-  margin: 40px auto 12px 40px;
+width: 180px;
+ margin: 0 0 12px 0;
 }
 
  .contacts-address {
-   width: 265px;
-   margin: 0 auto 24px 40px;
+
+margin: 0 0 24px 0;
  }
 
+.address-page {
+margin: 0;
+width: 265px;
+}
+
 .contacts-phone-item {
+  margin: 0 0 12px 0;
   color: #565C66;
-  margin: 0 auto 12px 40px;
+
 }
 
 .contacts-phone-worktime {
-  margin: 0 auto 28px 40px;
+margin: 0 0 32px 0;;
   color: #565C66;
+  font-size: 14px;
 }
 
 .contacts-button {
   color: #FCFCFC;
-  height: 52px;
-  width: 258px;
+
   background-color: #FF2F64;
   border: 4px solid #FEAFC3;
-  margin: 0 auto 36px 40px;
+
 }
 
 .contacts-phone {
-  margin: 0 auto 0 40px;
+
   font-style: normal;
   font-size: 20px;
   font-weight: 700;
