@@ -141,8 +141,10 @@
               <p class="popular-description">
                 Сливочное мороженое с малиновым джемом
               </p>
-              <b class="popular-price">310 ₽/кг</b>
-              <button class="btn choice-basket" type="button"><p class="visually-hidden"В корзину</p></button>
+              <div class="price-bucket-container">
+                <p class="popular-price">310 ₽/кг</p>
+              <button class="buсket-button" type="button"><p class="visually-hidden"В корзину</p></button>
+              </div>
             </li>
             <li class="popular-item">
               <img
@@ -203,14 +205,14 @@
                 временем технологий.
               </li>
               <li class="features-item">
-                Для приготовления мороженого используются сливки и молоко
-                высочайшего качества. Все ингредиенты и добавки произведены из
-                натурального сырья.
-              </li>
-              <li class="features-item">
                 Закупка ингредиентов производится только у проверенных
                 фермерских хозяйств, с которыми нас связывает долговременное
                 сотрудничество.
+              </li>
+              <li class="features-item">
+                Для приготовления мороженого используются сливки и молоко
+                высочайшего качества. Все ингредиенты и добавки произведены из
+                натурального сырья.
               </li>
               <li class="features-item">
                 Доставка нашего мороженого осуществляется в специальном
@@ -281,7 +283,10 @@
               action="https://echo.htmlacademy.ru/"
               method="post"
             >
-              <label class="delivery-form-date" for="delivery-date">Дата</label>
+            <p class="field-group delivery-container-date">
+              <label class="delivery-form-date" for="delivery-date">Дата
+                <button class="info">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button></label>
 
               <input
                 type="text"
@@ -289,7 +294,8 @@
                 name="delivery-date"
                 placeholder="01.04.2020"
               />
-
+            </p>
+            <p class="field-group delivery-container-phone">
               <label class="delivery-form-phone" for="delivery-phone"
                 >Телефон</label
               >
@@ -299,9 +305,12 @@
                 name="delivery-phone"
                 placeholder="+7 (800) 999-00-00"
               />
-
+            </p>
+            <p class="field-group delivery-container-address">
               <label class="delivery-form-address" for="delivery-adress"
-                >Адрес</label
+                >Адрес
+                <button class="info">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span></button></label
               >
 
               <input
@@ -310,7 +319,8 @@
                 name="delivery-adress"
                 placeholder="ул. Большая Конюшенная, 19/8"
               />
-              <button class="button button-red" type="submit">Отправить</button>
+            </p>
+              <button class="button button-red delivery-button" type="submit">Отправить</button>
             </form>
           </section>
         </section>
