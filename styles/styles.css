@@ -401,6 +401,11 @@ body {
   padding: 40px 40px 28px 40px;
 }
 
+.product-item:hover img {
+  transition: transform 0.2s ease;
+  transform: scale(1.2) translatey(-10px);
+}
+
 .product-photo {
   margin-top: -91px;
   margin-bottom: 16px;
@@ -707,22 +712,25 @@ body {
 }
 
 .pagination-container {
-  display: flex;
-
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
   padding-bottom: 73px;
 }
 
 .pagination-container button {
-  margin-left: 300px;
+  border-color: #ffcbd8;
+  grid-column: 2/3;
+  justify-self: center;
 }
 
 .pagination-list {
+  justify-self: right;
+  align-self: center;
   display: flex;
   margin: 0;
-  margin-left: auto;
+
   padding: 0;
 }
 
