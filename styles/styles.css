@@ -55,7 +55,6 @@ body {
 .button {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-style: bold;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -78,7 +77,7 @@ body {
 .header-button {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-style: normal;
+
   font-size: 14px;
   line-height: 20px;
   background-color: #fcfcfc4d;
@@ -91,7 +90,6 @@ body {
 .filter-button {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-style: bold;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -161,11 +159,6 @@ body {
   margin-left: 16px;
 }
 
-/* .page-container {
-  width: 1170px;
-  margin: 0 auto;
-} */
-
 .main-container {
   flex-grow: 1;
 }
@@ -230,6 +223,18 @@ body {
   text-decoration: none;
 }
 
+.sort {
+  display: block;
+}
+
+.label-sort {
+  display: block;
+}
+
+.filter-category {
+  border: none;
+}
+
 .popular-header,
 .features-header,
 .delivery-header,
@@ -270,7 +275,7 @@ body {
   margin: 0;
   font-size: 24px;
   line-height: 30px;
-  font-style: bold;
+  font-weight: 700;
 }
 
 .donates-description {
@@ -281,7 +286,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-
   border-radius: 16px;
   padding: 40px;
 }
@@ -289,7 +293,6 @@ body {
 .donates-raspberry {
   background-color: #ff7799;
   background-image: url("../Image/Backgrounds/raspberry-donates.png");
-
   background-repeat: no-repeat;
   background-position: bottom 0 right 15px;
 }
@@ -356,8 +359,8 @@ body {
 
 .catalog-list {
   display: grid;
-  grid-template-columns: 270px 270px 270px 270px;
-  gap: 91px 30px;
+  grid-template-columns: repeat(4, 270px);
+  grid-gap: 91px 30px;
   padding: 0;
   margin: 51px 0 57px;
 }
@@ -449,10 +452,6 @@ body {
   width: 32px;
 }
 
-/* .choice-basket {
-  width: 20px;
-} */
-
 .features {
   display: flex;
   min-height: 480px;
@@ -484,7 +483,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px 30px;
+  grid-gap: 40px 30px;
 }
 
 .features-item:nth-child(1)::before {
@@ -528,15 +527,6 @@ body {
   list-style-type: none;
   color: #565c66;
 }
-
-/* .features-item::before {
-  content: "";
-  padding-right: 48px;
-  width: 48px;
-  height: 48px;
-  background-image: url(../image/icons/cow.svg);
-  background-repeat: no-repeat;
-} */
 
 .subscribe {
   display: flex;
@@ -621,7 +611,7 @@ body {
 .delivery-form {
   display: grid;
   grid-template-columns: 117px 285px;
-  gap: 20px 16px;
+  grid-gap: 20px 16px;
 }
 
 .field-group {
@@ -634,12 +624,6 @@ body {
   margin: 0;
   color: #565c66;
   margin-bottom: 32px;
-}
-
-.delivery-container-date {
-}
-
-.delivery-container-phone {
 }
 
 .delivery-container-address {
@@ -677,6 +661,7 @@ body {
 }
 
 .address-page {
+  font-style: normal;
   margin: 0 auto 24px 0;
   width: 265px;
 }
@@ -693,7 +678,7 @@ body {
 }
 
 .contacts-phone {
-  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -702,7 +687,7 @@ body {
 }
 
 .contacts-address {
-  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -713,8 +698,7 @@ body {
 
 .pagination-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
+  grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
   padding-bottom: 73px;
 }
@@ -730,7 +714,6 @@ body {
   align-self: center;
   display: flex;
   margin: 0;
-
   padding: 0;
 }
 
@@ -753,8 +736,14 @@ body {
   text-transform: none;
 }
 
+.pagination-current {
+}
+
+.pagination-disabled {
+}
+
 .info-item-link {
-  font-style: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;

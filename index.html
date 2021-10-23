@@ -19,8 +19,8 @@
                   width="137"
                   height="56"
               /></a>
-             </li>
-             <li class="navigation-item">
+            </li>
+            <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Каталог</a>
             </li>
             <li class="navigation-item">
@@ -62,7 +62,9 @@
                 Натуральное мороженое из свежих сливок и молока с вкуснейшим
                 клубничным джемом - это идеальный десерт для всей семьи.
               </p>
-              <button class="button" type="submit">Заказать</button>
+              <button class="button button-white" type="submit">
+                Заказать
+              </button>
             </div>
             <button class="main-button-prev">Назад</button>
             <img
@@ -143,7 +145,9 @@
               </p>
               <div class="price-bucket-container">
                 <p class="product-price">310 ₽/кг</p>
-              <button class="buсket-button" type="button"><p class="visually-hidden"В корзину</p></button>
+                <button class="buсket-button" type="button">
+                  <span class="visually-hidden">В корзину</span>
+                </button>
               </div>
             </li>
             <li class="product-item">
@@ -158,7 +162,9 @@
               </p>
               <div class="price-bucket-container">
                 <p class="product-price">340 ₽/кг</p>
-              <button class="buсket-button" type="button"><p class="visually-hidden"В корзину</p></button>
+                <button class="buсket-button" type="button">
+                  <span class="visually-hidden">В корзину</span>
+                </button>
               </div>
             </li>
             <li class="product-item">
@@ -168,12 +174,12 @@
                 alt="Мороженное Черника"
               />
               <h3 class="product-item-header">Черника</h3>
-              <p class="product-description">
-                Крем-брюле с черничным джемом
-              </p>
+              <p class="product-description">Крем-брюле с черничным джемом</p>
               <div class="price-bucket-container">
                 <p class="product-price">330 ₽/кг</p>
-              <button class="buсket-button" type="button"><p class="visually-hidden"В корзину</p></button>
+                <button class="buсket-button" type="button">
+                  <span class="visually-hidden">В корзину</span>
+                </button>
               </div>
             </li>
             <li class="product-item">
@@ -188,7 +194,9 @@
               </p>
               <div class="price-bucket-container">
                 <p class="product-price">310 ₽/кг</p>
-              <button class="buсket-button" type="button"><p class="visually-hidden"В корзину</p></button>
+                <button class="buсket-button" type="button">
+                  <span class="visually-hidden">В корзину</span>
+                </button>
               </div>
             </li>
           </ul>
@@ -285,44 +293,53 @@
               action="https://echo.htmlacademy.ru/"
               method="post"
             >
-            <p class="field-group delivery-container-date">
-              <label class="delivery-form-date" for="delivery-date">Дата
-                <button class="info">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button></label>
+              <p class="field-group delivery-container-date">
+                <label class="delivery-form-date" for="delivery-date"
+                  >Дата
+                  <button class="info">
+                    <span class="visually-hidden"
+                      >Посмотреть дополнительную информацию</span
+                    >
+                  </button>
+                </label>
+                <input
+                  type="text"
+                  id="delivery-date"
+                  name="delivery-date"
+                  placeholder="01.04.2020"
+                />
+              </p>
+              <p class="field-group delivery-container-phone">
+                <label class="delivery-form-phone" for="delivery-phone"
+                  >Телефон</label
+                >
+                <input
+                  type="text"
+                  id="delivery-phone"
+                  name="delivery-phone"
+                  placeholder="+7 (800) 999-00-00"
+                />
+              </p>
+              <p class="field-group delivery-container-address">
+                <label class="delivery-form-address" for="delivery-adress"
+                  >Адрес
+                  <button class="info">
+                    <span class="visually-hidden"
+                      >Посмотреть дополнительную информацию</span
+                    >
+                  </button>
+                </label>
 
-              <input
-                type="text"
-                id="delivery-date"
-                name="delivery-date"
-                placeholder="01.04.2020"
-              />
-            </p>
-            <p class="field-group delivery-container-phone">
-              <label class="delivery-form-phone" for="delivery-phone"
-                >Телефон</label
-              >
-              <input
-                type="text"
-                id="delivery-phone"
-                name="delivery-phone"
-                placeholder="+7 (800) 999-00-00"
-              />
-            </p>
-            <p class="field-group delivery-container-address">
-              <label class="delivery-form-address" for="delivery-adress"
-                >Адрес
-                <button class="info">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию</span></button></label
-              >
-
-              <input
-                type="text"
-                id="delivery-adress"
-                name="delivery-adress"
-                placeholder="ул. Большая Конюшенная, 19/8"
-              />
-            </p>
-              <button class="button button-red delivery-button" type="submit">Отправить</button>
+                <input
+                  type="text"
+                  id="delivery-adress"
+                  name="delivery-adress"
+                  placeholder="ул. Большая Конюшенная, 19/8"
+                />
+              </p>
+              <button class="button button-red delivery-button" type="submit">
+                Отправить
+              </button>
             </form>
           </section>
         </section>
