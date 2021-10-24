@@ -414,6 +414,18 @@ body {
   margin-bottom: 16px;
 }
 
+.product-photo-link {
+}
+
+.product-header-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-description-link {
+  text-decoration: none;
+}
+
 .product-item-header {
   margin: 0;
   margin-bottom: 8px;
