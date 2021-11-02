@@ -68,8 +68,6 @@ body {
   color: #fcfcfc;
   outline: 4px solid #ff2f644d;
   background-color: #ff2f64;
-  /* box-shadow: 0 0 0 4px #feafc3; */
-  /* border: 4px solid #feafc3; */
 }
 
 .button-red:hover {
@@ -144,6 +142,113 @@ body {
   outline: 2px solid #fcfcfc;
 }
 
+.popover-bucket-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 48px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  min-width: 441px;
+  transform: translate(-323px, 10px);
+  z-index: 1;
+}
+
+.popover-bucket-full-header {
+  align-self: flex-start;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.popover-bucket-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.popover-bucket-item {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 10px;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 24px;
+}
+
+.popover-bucket-item:last-child {
+  margin-bottom: 0;
+}
+
+.popover-bucket-item:last-child {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.popover-bucket-photo {
+  display: block;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.popover-product-name {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.popover-product-description {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #b9b9b9;
+  margin-left: 16px;
+}
+
+.popover-product-price {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  align-self: center;
+}
+
+.popover-product-delete {
+  grid-row: 1/3;
+  align-self: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product-delete-icon {
+  fill: black;
+}
+
+.popover-bucket-total {
+  text-decoration: none;
+  color: inherit;
+  align-self: center;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.popover-bucket-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
 .navigation-link {
   display: block;
   font-size: 16px;
@@ -188,7 +293,6 @@ body {
 }
 
 .navigation-item {
-  list-style-type: none;
   margin-left: 18px;
 }
 
@@ -203,6 +307,7 @@ body {
   width: 630px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-list-user {
@@ -212,9 +317,77 @@ body {
   width: 500px;
 }
 
+.catalog-menu-container {
+  position: absolute;
+  transform: translateY(10px);
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.catalog-menu-list {
+  position: relative;
+  display: block;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  list-style-type: none;
+  min-width: 138px;
+}
+
+.catalog-menu-item:first-child {
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+
+.catalog-menu-item:first-child::after {
+  content: "";
+  transform: translateY(8px);
+  position: absolute;
+  overflow: auto;
+  margin-left: 16px;
+  width: 110px;
+  height: 1px;
+  background-color: #b9b9b9;
+}
+
+.catalog-menu-item:nth-child(2) {
+  padding-top: 8px;
+}
+
+.catalog-menu-item {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-menu-link {
+  display: block;
+  padding-left: 16px;
+  padding-right: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog-menu-link:hover {
+  background-color: #ffcbd8;
+}
+
+.catalog-menu-link:active {
+  background-color: #ff7799;
+}
+
+.catalog-menu-active-link {
+  color: #fcfcfc;
+  background-color: #ff4a78;
+}
+
 .navigation-user-item {
   position: relative;
-  list-style-type: none;
   margin-left: 16px;
 }
 
@@ -276,27 +449,47 @@ body {
 }
 
 .popover-search {
-  display: none;
+  display: block;
   position: absolute;
   transform: translate(-355px, 10px);
   background-color: #fcfcfc;
-  /* min-width: 356px;
-  min-height: 96px; */
   border-radius: 4px;
   z-index: 1;
 }
 
-.popover-search .field {
+.popover-search .search-field {
   margin: 24px 16px;
-  width: 324px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  min-width: 324px;
+}
+
+.search-close {
+  position: absolute;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 13px;
+  height: 13px;
+  right: 36px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.search-close-icon {
+  display: none;
+}
+
+.search-field:hover + .search-close .search-close-icon {
+  display: block;
+  fill: grey;
+}
+
+.search-close:hover .search-close-icon {
+  display: block;
+  fill: #2d3440;
 }
 
 .popover-login {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: absolute;
   transform: translate(-330px, 10px);
@@ -531,57 +724,17 @@ body {
   transform: translate(50%, 50%);
 }
 
+.slider-social {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .slider-social-list {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.slider-social-item {
-  display: block;
-  padding: 0;
-  margin: 0;
-  margin-right: 16px;
-  width: 28px;
-}
-
-.slider-social-link {
-  box-sizing: border-box;
-  display: block;
-  height: 28px;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  background-position: center;
-  background-size: 24px 24px;
-  border: 2px solid #fcfcfc33;
-}
-
-.slider-social-link:hover {
-  background-color: #2d3440;
-}
-
-.slider-social-link:active {
-  background-color: #2d3440;
-  border: 2px solid #2d3440;
-}
-
-.slider-vk {
-  background-image: url("../Image/icons/vk.svg");
-}
-
-.slider-fb {
-  background-image: url("../Image/icons/fb.svg");
-}
-
-.slider-instagram {
-  background-image: url("../Image/icons/instagram.svg");
-}
-
-.slider-socials {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .inner-catalog-item {
@@ -681,12 +834,12 @@ body {
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .donates-item {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   width: 570px;
 }
 
@@ -776,6 +929,7 @@ body {
   grid-gap: 91px 30px;
   padding: 0;
   margin: 51px 0 57px;
+  list-style-type: none;
 }
 
 .inner-catalog-item-header {
@@ -792,7 +946,6 @@ body {
   width: 270px;
   margin: 0;
   margin-top: 91px;
-  list-style-type: none;
 }
 
 .catalog-filter {
@@ -804,6 +957,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .product-item {
@@ -814,7 +968,6 @@ body {
   border-radius: 8px;
   width: 190px;
   margin: 0;
-  list-style-type: none;
   padding: 40px 40px 28px 40px;
 }
 
@@ -936,6 +1089,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px 30px;
+  list-style-type: none;
 }
 
 .features-item:nth-child(1)::before {
@@ -976,7 +1130,6 @@ body {
 
 .features-item {
   display: flex;
-  list-style-type: none;
   color: #565c66;
 }
 
@@ -1119,7 +1272,6 @@ body {
 }
 
 .info-tooltip {
-  display: block;
   position: absolute;
   box-sizing: border-box;
   background-color: #fcfcfc;
@@ -1391,47 +1543,37 @@ body {
   margin: 0;
 }
 
-.footer-social-item {
+.social-item {
   display: block;
   padding: 0;
   margin: 0;
   margin-right: 16px;
-  width: 28px;
+  width: 24px;
 }
 
-.footer-social-link {
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
   box-sizing: border-box;
   display: block;
-  height: 28px;
-  background-repeat: no-repeat;
+  height: 24px;
   border-radius: 50%;
-  background-position: center;
-  background-size: 24px 24px;
-  border: 2px solid #fcfcfc33;
+  outline: 2px solid #fcfcfc33;
 }
 
-.footer-social-link:hover {
+.social-link:hover {
   background-color: #2d3440;
 }
 
-.footer-social-link:active {
-  background-color: #2d3440;
-  border: 2px solid #2d3440;
+.social-icon {
+  transform: scale(1.01);
 }
 
-.footer-vk {
-  background-image: url("../Image/icons/vk.svg");
-}
-
-.footer-fb {
-  background-image: url("../Image/icons/fb.svg");
-}
-
-.footer-instagram {
-  background-image: url("../Image/icons/instagram.svg");
-}
-
-.footer-features {
+.social-link:focus,
+.spcial-link:active {
+  outline-color: #2d3440;
 }
 
 .info-list {

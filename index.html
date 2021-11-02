@@ -41,9 +41,19 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
-            <div class="popover-search">
+            <!-- Для включения поповера поиска убрать класс visually-hidden -->
+            <div class="popover-search visually-hidden">
               <form action="https://echo.htmlacademy.ru/" method="post">
-                <input class="field" id="search" name="search" type="text" placeholder="Поиск по сайту">
+                <label class="visually-hidden" for="search">Поиск по cайту</label>
+                <input class="search-field field" id="search" name="search" type="text" placeholder="Поиск по сайту">
+                <button class="search-close">
+                  <span class="visually-hidden">Закрыть</span>
+                  <svg class="search-close-icon" width="14" height="14" viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="search-close-icon" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12.8858 2.05482C13.1461 1.79447 13.1461 1.37236 12.8858 1.11201C12.6254 0.851661 12.2033 0.851661 11.943 1.11201L6.99877 6.0562L2.05458 1.11201C1.79423 0.851661 1.37212 0.851661 1.11177 1.11201C0.851417 1.37236 0.851417 1.79447 1.11177 2.05482L6.05596 6.99901L1.11177 11.9432C0.851417 12.2036 0.851417 12.6257 1.11177 12.886C1.37212 13.1464 1.79423 13.1464 2.05458 12.886L6.99877 7.94182L11.943 12.886C12.2033 13.1464 12.6254 13.1464 12.8858 12.886C13.1461 12.6257 13.1461 12.2036 12.8858 11.9432L7.94158 6.99901L12.8858 2.05482Z" />
+                  </svg>
+                </button>
               </form>
             </div>
           </li>
@@ -57,7 +67,8 @@
               </svg>
               Вход
             </a>
-            <div class="popover-login">
+            <!-- Для включения поповера авторизации убрать класс visually-hidden -->
+            <div class="popover-login visually-hidden">
               <h3 class="popover-login-header">Личный кабинет</h3>
               <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
                 <input class="field" name="email" type="email" placeholder="email@example.com" required>
@@ -83,7 +94,8 @@
               </svg>
               Корзина
             </a>
-            <div class="popover-bucket">
+            <!-- Для включения поповера корзины убрать класс visually-hidden -->
+            <div class="popover-bucket visually-hidden">
               <h3 class="popover-bucket-header">Ваша корзина пока пуста</h3>
             </div>
           </li>
@@ -95,7 +107,7 @@
       <section class="slider-container">
         <div class="slider-description-container">
           <h2 class="main-slider-header">
-            Нежный пломбир с клубничным джемом
+            Нежный пломбир<br> с клубничным джемом
           </h2>
           <p class="main-slider-item">
             Натуральное мороженое из свежих сливок<br> и молока с вкуснейшим
@@ -130,8 +142,6 @@
             </svg>
           </button>
         </div>
-
-
         <div class="slider-main">
           <button class="visually-hidden">
             <span class="visually-hidden">Назад</span>
@@ -152,7 +162,6 @@
             </svg>
           </button>
         </div>
-
         <div class="slider-main">
           <button class="visually-hidden">
             <span class="visually-hidden">Назад</span>
@@ -173,31 +182,29 @@
             </svg>
           </button>
         </div>
-
-
-
-        <div class="slider-socials">
+        <div class="slider-social">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="slider-social-item">
-              <a class="slider-social-link slider-vk" href="https://vk.com/htmlacademy">
+          <ul class="slider-social-list">
+            <li class="social-item">
+              <a class="social-link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">VK</span>
-
+                <img src="/Image/icons/VK.svg" alt="Логотип Вконтакте" class="social-icon">
               </a>
             </li>
-            <li class="slider-social-item">
-              <a class="slider-social-link slider-fb" href="https://www.facebook.com/htmlacademy">
+            <li class="social-item">
+              <a class="social-link" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Facebook</span>
+                <img src="/Image/icons/Facebook.svg" alt="Логотип Facebook" class="social-icon">
               </a>
             </li>
-            <li class="slider-social-item">
-              <a class="slider-social-link slider-instagram" href="https://www.instagram.com/htmlacademy">
+            <li class="social-item">
+              <a class="social-link" href="https://www.instagram.com/htmlacademy">
                 <span class="visually-hidden">Instagram</span>
+                <img src="/Image/icons/Instagram.svg" alt="Логотип Instagram" class="social-icon">
               </a>
             </li>
           </ul>
         </div>
-
       </section>
       <section class="donates">
         <h2 class="donates-header">
@@ -216,7 +223,6 @@
               </button>
             </div>
           </li>
-
           <li class="donates-item">
             <div class="donates-marshmellow donates-item-container">
               <h3 class="donates-title">Маршмеллоу даром!</h3>
@@ -413,7 +419,7 @@
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
                 <div class="info-tooltip info-date">
-                  <p class="info-tooltip-item">Мы уточним дату во время звонка</p>
+                  <p class="info-tooltip-item">Ма работаем без выходных и праздников!</p>
                 </div>
               </label>
               <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" />
@@ -465,20 +471,22 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-link footer-vk" href="https://vk.com/htmlacademy">
+          <li class="social-item">
+            <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">VK</span>
-
+              <img src="/Image/icons/VK.svg" alt="Логотип Вконтакте" class="social-icon">
             </a>
           </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link footer-fb" href="https://www.facebook.com/htmlacademy">
+          <li class="social-item">
+            <a class="social-link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span>
+              <img src="/Image/icons/Facebook.svg" alt="Логотип Facebook" class="social-icon">
             </a>
           </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link footer-instagram" href="https://www.instagram.com/htmlacademy">
+          <li class="social-item">
+            <a class="social-link" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Instagram</span>
+              <img src="/Image/icons/Instagram.svg" alt="Логотип Instagram" class="social-icon">
             </a>
           </li>
         </ul>
@@ -509,6 +517,7 @@
       </div>
     </footer>
   </div>
+  <!-- Для включения модального окна убрать класс visually-hidden -->
   <div class="modal-container visually-hidden">
     <div class="modal-feedback">
       <h3 class="modal-feedback-header">Мы обязательно ответим вам!</h3>
