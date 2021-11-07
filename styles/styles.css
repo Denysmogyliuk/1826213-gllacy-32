@@ -126,6 +126,7 @@ body {
   background-color: #fcfcfc4d;
   border-radius: 20px;
   padding: 8px 53px;
+  margin-top: 10px;
   outline: 2px solid #fcfcfc;
   align-self: center;
   cursor: pointer;
@@ -738,6 +739,7 @@ body {
   margin-right: 8px;
   background-color: #fcfcfc66;
   border: none;
+  cursor: pointer;
 }
 
 .slider-pagination-button:hover {
@@ -755,11 +757,13 @@ body {
 
 .slider-button-prev {
   transform: translate(-50%, 50%);
+  cursor: pointer;
 }
 
 .slider-button-next {
   right: 0;
   transform: translate(50%, 50%);
+  cursor: pointer;
 }
 
 .slider-social {
