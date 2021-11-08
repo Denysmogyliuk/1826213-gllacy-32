@@ -1143,14 +1143,14 @@ body {
 
 .donates-raspberry {
   background-color: #ff7799;
-  background-image: url("../images/Backgrounds/raspberry-donates.png");
+  background-image: url("../images/backgrounds/raspberry-donates.png");
   background-repeat: no-repeat;
   background-position: bottom 0 right 15px;
 }
 
 .donates-marshmellow {
   background-color: #ff7799;
-  background-image: url("../images/Backgrounds/marshmellow-donate.png");
+  background-image: url("../images/backgrounds/marshmellow-donate.png");
   background-repeat: no-repeat;
   background-position: bottom 0 right 7px;
 }
@@ -1160,7 +1160,7 @@ body {
   align-items: start;
   flex-direction: column;
   background-color: #eed5dc;
-  background-image: url("../images/Backgrounds/news.png");
+  background-image: url("../images/backgrounds/news.png");
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 506px;
@@ -1332,7 +1332,7 @@ body {
   min-height: 480px;
   background-color: #f8e1b2;
   border-radius: 16px;
-  background-image: url("../images/Backgrounds/vaffle-background.png");
+  background-image: url("../images/backgrounds/vaffle-background.png");
   background-repeat: no-repeat;
   margin-bottom: 80px;
 }
@@ -1409,7 +1409,7 @@ body {
   display: flex;
   background-color: #ccb6d7;
   border-radius: 16px;
-  background-image: url("../images/Backgrounds/Post.png");
+  background-image: url("../images/backgrounds/post.png");
   /* background-size: 570px 222px; */
   background-repeat: no-repeat;
   width: 570px;
@@ -1510,7 +1510,7 @@ body {
   grid-template-columns: 1fr 628px;
   background-color: #dac9ba;
   border-radius: 16px;
-  background-image: url("../images/Backgrounds/delivery.png");
+  background-image: url("../images/backgrounds/delivery.png");
   background-repeat: no-repeat;
   margin-bottom: 80px;
   min-height: 534px;
@@ -1591,7 +1591,7 @@ body {
   transform: translateX(5px);
   background-color: transparent;
   border: none;
-  background-image: url("../images/icons/Info.svg");
+  background-image: url("../images/icons/info.svg");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
@@ -1649,7 +1649,7 @@ body {
   min-height: 492px;
   background-color: #edc2b0;
   border-radius: 16px;
-  background-image: url("../images/Backgrounds/contacts.png");
+  background-image: url("../images/backgrounds/contacts.png");
   background-repeat: no-repeat;
 }
 
