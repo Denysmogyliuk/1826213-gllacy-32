@@ -523,7 +523,7 @@ body {
 .popover-search {
   display: block;
   position: absolute;
-  transform: translate(-355px, 10px);
+  transform: translate(-322px, 10px);
   background-color: #fcfcfc;
   border-radius: 4px;
   z-index: 1;
@@ -532,7 +532,7 @@ body {
 
 .popover-search .search-field {
   margin: 24px 16px;
-  min-width: 324px;
+  min-width: 322px;
 }
 
 .search-close {
@@ -565,7 +565,7 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  transform: translate(-330px, 10px);
+  transform: translate(-328px, 10px);
   box-sizing: border-box;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -582,14 +582,13 @@ body {
 }
 
 .login-form .field:nth-child(2) {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .login-form a {
   display: block;
-
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
@@ -613,6 +612,10 @@ body {
   margin-bottom: 32px;
   font-size: 24px;
   line-height: 30px;
+}
+
+.login-forgot {
+ line-height: 10px;
 }
 
 .navigation-search-link:hover .popover-search {
@@ -1990,14 +1993,14 @@ body {
   display: flex;
   flex-direction: column;
   position: fixed;
+  box-sizing: border-box;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 64px;
-  max-width: 570px;
-  box-sizing: border-box;
+  min-width: 570px;
   box-shadow: 0 15px 40px 0 #2d34401f;
 }
 
@@ -2015,15 +2018,15 @@ body {
 }
 
 .modal-feedback-form input:first-of-type {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .modal-feedback-form input:nth-of-type(2) {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .modal-feedback-form textarea {
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   resize: none;
 }
 
