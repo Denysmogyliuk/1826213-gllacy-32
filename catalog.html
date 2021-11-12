@@ -63,8 +63,7 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
-            <!-- Для включения поповера поиска убрать класс visually-hidden -->
-            <div class="popover-search visually-hidden">
+            <div class="popover-search">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="search">Поиск по cайту</label>
                 <input class="search-field field" id="search" name="search" type="text" placeholder="Поиск по сайту">
@@ -80,7 +79,7 @@
             </div>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="navigation-user-link">
+            <a href="#" class="navigation-user-link navigation-login-link">
               <svg class="navigation-login-icon" aria-hidden="true" focusable="false" width="16" height="16"
                 viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -89,25 +88,27 @@
               </svg>
               Вход
             </a>
-            <!-- Для включения поповера авторизации убрать класс visually-hidden -->
-            <div class="popover-login visually-hidden">
-              <h3 class="popover-login-header">Личный кабинет</h3>
-              <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="field" name="email" type="email" placeholder="email@example.com" required>
-                <input class="field" name="pass" type="password"
-                  placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" required>
-                <div class="button-login-container">
-                  <button class="button button-red" type="submit">Войти</button>
-                  <div class="forgot-register-container">
-                    <a href="#" class="login-forgot">Забыли пароль?</a>
-                    <a href="#" class="login-register">Регистрация</a>
+
+            <div class="popover-login">
+              <div class="popover-login-container">
+                <h3 class="popover-login-header">Личный кабинет</h3>
+                <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <input class="field" name="email" type="email" placeholder="email@example.com" required>
+                  <input class="field" name="pass" type="password"
+                    placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" required>
+                  <div class="button-login-container">
+                    <button class="button button-red" type="submit">Войти</button>
+                    <div class="forgot-register-container">
+                      <a href="#" class="login-forgot">Забыли пароль?</a>
+                      <a href="#" class="login-register">Регистрация</a>
+                    </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="navigation-user-link">
+            <a href="#" class="navigation-user-link navigation-catalog-bucket-link">
               <svg class="navigation-bucket-icon" aria-hidden="true" focusable="false" width="17" height="16"
                 viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -117,44 +118,46 @@
               2 товара
             </a>
 
-            <!-- Для включения поповера корзины убрать класс visually-hidden-->
-            <div class="popover-bucket-container visually-hidden">
-              <h3 class="popover-bucket-full-header">Корзина</h3>
-              <ul class="popover-bucket-list">
-                <li class="popover-bucket-item">
-                  <img src="images/catalog/photo-1.png" alt="Мороженое Малинка." class="popover-bucket-photo" width="46"
-                    height="46">
-                  <p class="popover-product-name">Малинка</p>
-                  <p class="popover-product-description">1 кг х 310 ₽</p>
-                  <p class="popover-product-price">310 ₽</p>
-                  <button class="popover-product-delete" type="button">
-                    <span class="visually-hidden">Удалить товар из корзины.</span>
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"
-                        fill="#2D3440" />
-                    </svg>
-                  </button>
-                </li>
-                <li class="popover-bucket-item">
-                  <img src="images/catalog/photo-4.png" alt="Мороженое Бабл-гам." class="popover-bucket-photo"
-                    width="46" height="46">
-                  <p class="popover-product-name">Бабл-гам</p>
-                  <p class="popover-product-description">1,5 кг х 320 ₽</p>
-                  <p class="popover-product-price">480 ₽</p>
-                  <button class="popover-product-delete" type="button">
-                    <span class="visually-hidden">Удалить товар из корзины.</span>
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"
-                        fill="#2D3440" />
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-              <div class="popover-bucket-button-container">
-                <button class="button button-red" type="button">Оформить заказ</button>
-                <a href="" class="popover-bucket-total">Итого: 790 ₽</a>
+            <!-- Для включения поповера корзины добавить класс .popover-open-->
+            <div class="popover-full-bucket">
+              <div class="popover-bucket-container">
+                <h3 class="popover-bucket-full-header">Корзина</h3>
+                <ul class="popover-bucket-list">
+                  <li class="popover-bucket-item">
+                    <img src="images/catalog/photo-1.png" alt="Мороженое Малинка." class="popover-bucket-photo"
+                      width="46" height="46">
+                    <p class="popover-product-name">Малинка</p>
+                    <p class="popover-product-description">1 кг х 310 ₽</p>
+                    <p class="popover-product-price">310 ₽</p>
+                    <button class="popover-product-delete" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины.</span>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"
+                          fill="#2D3440" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="popover-bucket-item">
+                    <img src="images/catalog/photo-4.png" alt="Мороженое Бабл-гам." class="popover-bucket-photo"
+                      width="46" height="46">
+                    <p class="popover-product-name">Бабл-гам</p>
+                    <p class="popover-product-description">1,5 кг х 320 ₽</p>
+                    <p class="popover-product-price">480 ₽</p>
+                    <button class="popover-product-delete" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины.</span>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"
+                          fill="#2D3440" />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-bucket-button-container">
+                  <button class="button button-red" type="button">Оформить заказ</button>
+                  <a href="" class="popover-bucket-total">Итого: 790 ₽</a>
+                </div>
               </div>
             </div>
           </li>
@@ -297,7 +300,7 @@
         <ul class="catalog-list">
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-1.png" alt="Мороженное Малинка." width="168"
+              <img class="product-photo" src="images/catalog/photo-1.png" alt="Мороженое Малинка." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -322,7 +325,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-2.png" alt="Мороженное Фисташка." width="168"
+              <img class="product-photo" src="images/catalog/photo-2.png" alt="Мороженое Фисташка." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -347,7 +350,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-3.png" alt="Мороженное Черника." width="168"
+              <img class="product-photo" src="images/catalog/photo-3.png" alt="Мороженое Черника." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -370,7 +373,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-4.png" alt="Мороженное Бабл-гам." width="168"
+              <img class="product-photo" src="images/catalog/photo-4.png" alt="Мороженое Бабл-гам." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -395,7 +398,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-5.png" alt="Мороженное Ежевика." width="168"
+              <img class="product-photo" src="images/catalog/photo-5.png" alt="Мороженое Ежевика." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -420,7 +423,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-6.png" alt="Мороженное Банан." width="168"
+              <img class="product-photo" src="images/catalog/photo-6.png" alt="Мороженое Банан." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -428,7 +431,7 @@
             </a>
             <a href="#" class="product-description-link">
               <p class="product-description">
-                Сливочный пломбир с банановым вкусом
+                Сливочный пломбир<br> с банановым вкусом
               </p>
             </a>
             <div class="price-bucket-container">
@@ -445,7 +448,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-7.png" alt="Мороженное Шоколадка." width="168"
+              <img class="product-photo" src="images/catalog/photo-7.png" alt="Мороженое Шоколадка." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -470,7 +473,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-8.png" alt="Мороженное Клубничка." width="168"
+              <img class="product-photo" src="images/catalog/photo-8.png" alt="Мороженое Клубничка." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -478,7 +481,7 @@
             </a>
             <a href="#" class="product-description-link">
               <p class="product-description">
-                Сливочный пломбир с клубничным вкусом
+                Сливочный пломбир<br> с клубничным вкусом
               </p>
             </a>
             <div class="price-bucket-container">
@@ -495,7 +498,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-9.png" alt="Мороженное Лимон." width="168"
+              <img class="product-photo" src="images/catalog/photo-9.png" alt="Мороженое Лимон." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -518,7 +521,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-10.png" alt="Мороженное Ментол." width="168"
+              <img class="product-photo" src="images/catalog/photo-10.png" alt="Мороженое Ментол." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -526,7 +529,7 @@
             </a>
             <a href="#" class="product-description-link">
               <p class="product-description">
-                Сливочный пломбир с ментоловым сиропом
+                Сливочный пломбир<br> с ментоловым сиропом
               </p>
             </a>
             <div class="price-bucket-container">
@@ -543,7 +546,7 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-11.png" alt="Мороженное Орешек." width="168"
+              <img class="product-photo" src="images/catalog/photo-11.png" alt="Мороженое Орешек." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
@@ -568,14 +571,14 @@
           </li>
           <li class="product-item">
             <a href="#" class="product-photo-link">
-              <img class="product-photo" src="images/catalog/photo-12.png" alt="Мороженное Крем-брюле." width="168"
+              <img class="product-photo" src="images/catalog/photo-12.png" alt="Мороженое Крем-брюле." width="168"
                 height="168" />
             </a>
             <a href="#" class="product-header-link">
               <h3 class="product-item-header">Крем-брюле</h3>
             </a>
             <a href="#" class="product-description-link">
-              <p class="product-description">Классический крем-брюле</p>
+              <p class="product-description">Классическое<br> крем-брюле</p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">280 ₽/кг</p>
@@ -683,7 +686,7 @@
           <img src="images/logo_htmlacademy.svg" alt="Логотип HTML Academy." class="logo" width="93" height="27" />
         </a>
         <p class="copyright-text">
-          Сделано в <a href="www.htmlacademy.ru">.html academy</a> &#169; 2021
+          Сделано в <a href="https://www.htmlacademy.ru">.html academy</a> &#169; 2021
         </p>
       </div>
     </footer>
