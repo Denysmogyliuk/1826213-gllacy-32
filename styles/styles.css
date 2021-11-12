@@ -217,9 +217,9 @@ body {
 .popover-bucket-container::before {
   content: "";
   position: absolute;
-  height: 30px;
+  height: 8px;
   width: 100px;
-  top: -30px;
+  top: -8px;
   right: 0;
   background-color: transparent;
 }
@@ -309,6 +309,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+  margin-right: 2px;
 }
 
 .popover-bucket-button-container {
@@ -564,11 +565,11 @@ body {
 
 .popover-search::before {
   content: "";
-  height: 30px;
+  height: 8px;
   width: 80px;
   position: absolute;
   right: 0;
-  top: -30px;
+  top: -8px;
   background-color: transparent;
 }
 
@@ -627,9 +628,9 @@ body {
 .popover-login-container::before {
   content: "";
   position: absolute;
-  top: -30px;
+  top: -8px;
   right: 0;
-  height: 30px;
+  height: 8px;
   width: 100px;
   background-color: transparent;
 }
@@ -696,9 +697,9 @@ body {
 .popover-bucket::before {
   content: "";
   position: absolute;
-  height: 10px;
+  height: 8px;
   width: 100px;
-  top: -10px;
+  top: -8px;
   right: 0;
   background-color: transparent;
 }
@@ -1505,49 +1506,55 @@ body {
   margin: 0;
   padding: 0;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px 28px;
+  grid-gap: 40px 30px;
   list-style-type: none;
+}
+
+.features-item {
+  display: flex;
+  color: #565c66;
+  margin-left: 64px;
+  position: relative;
 }
 
 .features-item:nth-child(1)::before {
   content: "";
-  padding-right: 48px;
+  position: absolute;
   width: 48px;
   height: 48px;
+  left: -64px;
   background-image: url("../images/icons/icecream.svg");
   background-repeat: no-repeat;
 }
 
 .features-item:nth-child(2)::before {
   content: "";
-  padding-right: 48px;
+  position: absolute;
   width: 48px;
   height: 48px;
+  left: -64px;
   background-image: url("../images/icons/cow.svg");
   background-repeat: no-repeat;
 }
 
 .features-item:nth-child(3)::before {
   content: "";
-  padding-right: 48px;
+  position: absolute;
   width: 48px;
   height: 48px;
+  left: -64px;
   background-image: url("../images/icons/green.svg");
   background-repeat: no-repeat;
 }
 
 .features-item:nth-child(4)::before {
   content: "";
-  padding-right: 48px;
+  position: absolute;
   width: 48px;
   height: 48px;
+  left: -64px;
   background-image: url("../images/icons/temperature.svg");
   background-repeat: no-repeat;
-}
-
-.features-item {
-  display: flex;
-  color: #565c66;
 }
 
 .subscribe {
@@ -1896,7 +1903,6 @@ body {
 
 .pagination-item:first-child {
   margin-right: 12px;
-  opacity: 30%;
 }
 
 .pagination-item:last-child {
@@ -1932,17 +1938,21 @@ body {
   bottom: 6px;
 }
 
-.pagination-link:hover:not(.pagination-link-current) {
+.pagination-link:hover:not(.pagination-link-current):not(.pagination-disabled) {
   background-color: #fcfcfc4d;
 }
 
-.pagination-link:focus:not(.pagination-link-current) {
+.pagination-link:focus:not(.pagination-link-current):not(.pagination-disabled) {
   outline: 1px solid #2d3440;
   outline-offset: 0;
 }
 
 .pagination-link-current {
   background-color: #fcfcfc;
+}
+
+.pagination-disabled {
+  opacity: 30%;
 }
 
 .footer {
