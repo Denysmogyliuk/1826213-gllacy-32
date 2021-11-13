@@ -303,6 +303,7 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .bucket-delete-icon {
@@ -1766,8 +1767,8 @@ body {
 .info {
   position: absolute;
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   bottom: 4px;
   transform: translateX(5px);
   background-color: transparent;
@@ -1781,7 +1782,7 @@ body {
 
 .info-tooltip {
   position: absolute;
-  display: none;
+  display: block;
   box-sizing: border-box;
   background-color: #fcfcfc;
   padding: 10px 8px;
@@ -1792,6 +1793,9 @@ body {
   left: 24px;
   top: -13px;
   text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s opacity, 0.2s visibility;
 }
 
 .info-tooltip-item {
@@ -1815,8 +1819,11 @@ body {
   border-top: none;
 }
 
-.info:hover > .info-tooltip {
+.info:hover > .info-tooltip,
+.info:focus > .info-tooltip {
   display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .contacts {
