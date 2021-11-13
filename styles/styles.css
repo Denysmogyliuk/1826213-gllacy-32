@@ -74,6 +74,7 @@ body {
 .button-red {
   color: #fcfcfc;
   background-color: #ff2f64;
+  box-shadow: 0 0 0 1px #ff2f64;
 }
 
 .button-red::before {
@@ -200,6 +201,10 @@ body {
   display: block;
 }
 
+.navigation-user-item:focus-within .popover-full-bucket {
+  display: block;
+}
+
 .popover-bucket-container {
   display: flex;
   flex-direction: column;
@@ -221,7 +226,6 @@ body {
   width: 100px;
   top: -8px;
   right: 0;
-  background-color: transparent;
 }
 
 .popover-bucket-full-header {
@@ -298,7 +302,6 @@ body {
   padding: 0;
   width: 30px;
   height: 30px;
-  background-color: transparent;
   cursor: pointer;
 }
 
@@ -349,6 +352,7 @@ body {
 .navigation-link:focus {
   background-color: #fcfcfc80;
   border-color: #2d3440;
+  color: #2d3440;
 }
 
 .navigation-link:active {
@@ -418,8 +422,11 @@ body {
   height: 10px;
   width: 140px;
   position: absolute;
-  background-color: transparent;
   transform: translateY(-10px);
+}
+
+.navigation-item:focus-within .catalog-menu-container {
+  display: block;
 }
 
 .navigation-catalog-link:hover + .catalog-menu-container {
@@ -552,6 +559,10 @@ body {
   display: block;
 }
 
+.navigation-user-item:focus-within .popover-search {
+  display: block;
+}
+
 .popover-search {
   display: none;
   position: absolute;
@@ -578,7 +589,6 @@ body {
   position: absolute;
   right: 0;
   top: -8px;
-  background-color: transparent;
 }
 
 .search-close {
@@ -599,11 +609,13 @@ body {
   fill: none;
 }
 
-.search-field:hover + .search-close .search-close-icon {
+.search-field:hover + .search-close .search-close-icon,
+.search-field:focus + .search-close .search-close-icon {
   fill: #b9b9b9;
 }
 
-.search-close:hover .search-close-icon {
+.search-close:hover .search-close-icon,
+.search-close:focus .search-close-icon {
   fill: #2d3440;
 }
 
@@ -616,6 +628,10 @@ body {
 }
 
 .popover-login:hover {
+  display: block;
+}
+
+.navigation-user-item:focus-within .popover-login {
   display: block;
 }
 
@@ -640,7 +656,6 @@ body {
   right: 0;
   height: 8px;
   width: 100px;
-  background-color: transparent;
 }
 
 .login-form .field:first-child {
@@ -691,6 +706,10 @@ body {
   display: block;
 }
 
+.navigation-user-item:focus-within .popover-bucket {
+  display: block;
+}
+
 .popover-bucket {
   display: none;
   position: absolute;
@@ -709,7 +728,6 @@ body {
   width: 100px;
   top: -8px;
   right: 0;
-  background-color: transparent;
 }
 
 .popover-bucket:hover {
