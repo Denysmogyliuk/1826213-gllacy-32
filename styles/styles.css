@@ -771,6 +771,10 @@ body {
   align-items: flex-start;
 }
 
+.slider-description-container .button {
+  margin-bottom: 16px;
+}
+
 .main-slider-header {
   font-weight: 900;
   font-size: 36px;
@@ -1395,8 +1399,9 @@ body {
 }
 
 .popular-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-gap: 91px 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
