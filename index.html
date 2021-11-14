@@ -53,7 +53,7 @@
             <a class="header-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="navigation-user-link navigation-search-link">
+            <a class="navigation-user-link navigation-search-link" href="#">
               <svg class="navigation-search-icon" aria-hidden="true" focusable="false" width="16" height="16"
                 viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -78,7 +78,7 @@
             </div>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="navigation-user-link navigation-login-link">
+            <a class="navigation-user-link navigation-login-link" href="#">
               <svg class="navigation-login-icon" aria-hidden="true" focusable="false" width="16" height="16"
                 viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -91,14 +91,17 @@
               <div class="popover-login-container">
                 <h3 class="popover-login-header">Личный кабинет</h3>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <input class="field" name="email" type="email" placeholder="email@example.com" required>
-                  <input class="field" name="pass" type="password"
+                  <label class="visually-hidden" for="login-email">Введите электронную почту.</label>
+                  <input class="field" id="login-email" name="email" type="email" placeholder="email@example.com"
+                    required>
+                  <label class="visually-hidden" for="login-password">Введите пароль.</label>
+                  <input class="field" id="login-password" name="pass" type="password"
                     placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" required>
                   <div class="button-login-container">
                     <button class="button button-red" type="submit">Войти</button>
                     <div class="forgot-register-container">
-                      <a href="#" class="login-forgot">Забыли пароль?</a>
-                      <a href="#" class="login-register">Регистрация</a>
+                      <a class="login-forgot" href="#">Забыли пароль?</a>
+                      <a class="login-register" href="#">Регистрация</a>
                     </div>
                   </div>
                 </form>
@@ -106,7 +109,7 @@
             </div>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="navigation-user-link navigation-bucket-link">
+            <a class="navigation-user-link navigation-bucket-link" href="#">
               <svg class="navigation-bucket-icon" aria-hidden="true" focusable="false" width="17" height="16"
                 viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -125,6 +128,7 @@
     <main class="main-container main-index">
       <h1 class="visually-hidden">Глейси Шоп.</h1>
       <section class="main-slider">
+
         <!-- для отображения клубничного слайда добавить класс .slider-active -->
         <div class="slider-container slider-active">
           <div class="slider-description-container">
@@ -186,26 +190,27 @@
               <li class="social-item">
                 <a class="social-link" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">VKontakte.</span>
-                  <img src="images/icons/vk.svg" alt="Логотип Вконтакте." class="social-icon" width="24" height="24">
+                  <img class="social-icon" src="images/icons/vk.svg" alt="Логотип Вконтакте." width="24" height="24">
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Facebook.</span>
-                  <img src="images/icons/facebook.svg" alt="Логотип Facebook." class="social-icon" width="24"
+                  <img class="social-icon" src="images/icons/facebook.svg" alt="Логотип Facebook." width="24"
                     height="24">
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Instagram.</span>
-                  <img src="images/icons/instagram.svg" alt="Логотип Instagram." class="social-icon" width="24"
+                  <img class="social-icon" src="images/icons/instagram.svg" alt="Логотип Instagram." width="24"
                     height="24">
                 </a>
               </li>
             </ul>
           </div>
         </div>
+
         <!-- для отображения бананового слайда добавить класс .slider-active -->
         <div class="slider-container">
           <div class="slider-description-container">
@@ -266,20 +271,20 @@
               <li class="social-item">
                 <a class="social-link" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">VKontakte.</span>
-                  <img src="images/icons/vk.svg" alt="Логотип Вконтакте." class="social-icon" width="24" height="24">
+                  <img class="social-icon" src="images/icons/vk.svg" alt="Логотип Вконтакте." width="24" height="24">
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Facebook.</span>
-                  <img src="images/icons/facebook.svg" alt="Логотип Facebook." class="social-icon" width="24"
+                  <img class="social-icon" src="images/icons/facebook.svg" alt="Логотип Facebook." width="24"
                     height="24">
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Instagram.</span>
-                  <img src="images/icons/instagram.svg" alt="Логотип Instagram." class="social-icon" width="24"
+                  <img class="social-icon" src="images/icons/instagram.svg" alt="Логотип Instagram." width="24"
                     height="24">
                 </a>
               </li>
@@ -346,20 +351,20 @@
               <li class="social-item">
                 <a class="social-link" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">VKontakte.</span>
-                  <img src="images/icons/vk.svg" alt="Логотип Вконтакте." class="social-icon" width="24" height="24">
+                  <img class="social-icon" src="images/icons/vk.svg" alt="Логотип Вконтакте." width="24" height="24">
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Facebook.</span>
-                  <img src="images/icons/facebook.svg" alt="Логотип Facebook." class="social-icon" width="24"
+                  <img class="social-icon" src="images/icons/facebook.svg" alt="Логотип Facebook." width="24"
                     height="24">
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Instagram.</span>
-                  <img src="images/icons/instagram.svg" alt="Логотип Instagram." class="social-icon" width="24"
+                  <img class="social-icon" src="images/icons/instagram.svg" alt="Логотип Instagram." width="24"
                     height="24">
                 </a>
               </li>
@@ -405,21 +410,21 @@
         </h2>
         <ul class="popular-list">
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-1.png" alt="Мороженое Малинка." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Малинка</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Сливочное мороженое с малиновым джемом
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">310 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -430,21 +435,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-2.png" alt="Мороженое Фисташка." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Фисташка</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Фисташковый пломбир с кусочками шоколада
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">340 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -455,19 +460,19 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-3.png" alt="Мороженое Черника." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Черника</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">Крем-брюле<br> с черничным джемом</p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">330 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -478,21 +483,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-4.png" alt="Мороженое Бабл-гам." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Бабл-гам</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Ванильный пломбир<br> со сладкой посыпкой
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">320 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -551,7 +556,7 @@
               <label class="visually-hidden" for="email">
                 Ваша электронная почта.
               </label>
-              <input class="field" id="email" name="email" placeholder="email@example.com" type="email" required />
+              <input class="field" id="email" name="email" type="email" placeholder="email@example.com" required />
               <button class="button button-red" type="submit">
                 Отправить
               </button>
@@ -577,22 +582,21 @@
             <div class="delivery-input-container">
               <div class="field-group delivery-container-date">
                 <span class="form-label form-label-icon">
-                  <label for="delivery-date">Дата </label>
+                  <label for="delivery-date">Дата</label>
                   <button class="info" type="button">
                     <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
                     <span class="info-tooltip">
                       <span class="info-tooltip-item">Ма работаем без выходных и праздников!</span>
                     </span>
                   </button>
-
                 </span>
-                <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" />
+                <input class="field" id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020" />
               </div>
               <div class="field-group delivery-container-phone">
                 <span class="form-label">
                   <label for="delivery-phone">Телефон</label>
                 </span>
-                <input class="field" type="text" id="delivery-phone" name="delivery-phone"
+                <input class="field" id="delivery-phone" name="delivery-phone" type="text"
                   placeholder="+7 800 999-00-00" required />
               </div>
               <div class="field-group delivery-container-address">
@@ -605,7 +609,7 @@
                     </span>
                   </button>
                 </span>
-                <input class="field" type="text" id="delivery-adress" name="delivery-adress"
+                <input class="field" id="delivery-adress" name="delivery-adress" type="text"
                   placeholder="ул. Большая Конюшенная, 19/8" />
               </div>
             </div>
@@ -629,7 +633,7 @@
           <p class="contacts-phone-item">Для заказов по телефону:</p>
           <a class="contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
           <p class="contacts-phone-worktime">(с 10 до 20 ежедневно)</p>
-          <button class="button button-red" type="submit">
+          <button class="button button-red" type="button">
             Форма обратной связи
           </button>
         </div>
@@ -642,19 +646,19 @@
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">VK.</span>
-              <img src="images/icons/vk.svg" alt="Логотип Вконтакте." class="social-icon" width="24" height="24">
+              <img class="social-icon" src="images/icons/vk.svg" alt="Логотип Вконтакте." width="24" height="24">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook.</span>
-              <img src="images/icons/facebook.svg" alt="Логотип Facebook." class="social-icon" width="24" height="24">
+              <img class="social-icon" src="images/icons/facebook.svg" alt="Логотип Facebook." width="24" height="24">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Instagram.</span>
-              <img src="images/icons/instagram.svg" alt="Логотип Instagram." class="social-icon" width="24" height="24">
+              <img class="social-icon" src="images/icons/instagram.svg" alt="Логотип Instagram." width="24" height="24">
             </a>
           </li>
         </ul>
@@ -663,25 +667,27 @@
         <h2 class="visually-hidden">Дополнительная информация.</h2>
         <ul class="info-list">
           <li class="info-item">
-            <a href="#" class="info-item-link info-item-link-bold">Для поставщиков</a>
+            <a class="info-item-link info-item-link-bold" href="#">Для поставщиков</a>
           </li>
           <li class="info-item">
-            <a href="#" class="info-item-link">Наши документы</a>
+            <a class="info-item-link" href="#">Наши документы</a>
           </li>
           <li class="info-item">
-            <a href="#" class="info-item-link">О производстве</a>
+            <a class="info-item-link" href="#">О производстве</a>
           </li>
           <li class="info-item">
-            <a href="#" class="info-item-link">Экологические стандарты</a>
+            <a class="info-item-link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </section>
       <div class="copyright">
-        <a href="https://www.htmlacademy.ru"><img src="images/logo_htmlacademy.svg" alt="Логотип HTML Academy."
-            class="logo" width="93" height="27" />
+        <a href="https://www.htmlacademy.ru">
+          <img class="logo" src="images/logo_htmlacademy.svg" alt="Логотип HTML Academy." width="93" height="27" />
         </a>
         <p class="copyright-text">
-          Сделано в <a href="https://www.htmlacademy.ru">.html academy</a> &#169; 2021
+          Сделано в
+          <a href="https://www.htmlacademy.ru">
+            .html academy</a> &#169; 2021
         </p>
       </div>
     </footer>
@@ -692,16 +698,16 @@
     <div class="modal-feedback">
       <h3 class="modal-feedback-header">Мы обязательно ответим вам!</h3>
       <button class="modal-close-button" type="button"></button>
-      <a href="#" class="modal-close-button">
+      <a class="modal-close-button" href="#">
         <span class="visually-hidden">Закрыть окно.</span>
       </a>
       <form class="modal-feedback-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="Name">Ваше имя и фамилия.</label>
-        <input class="field" type="text" name="Name" id="Name" placeholder="Имя и фамилия">
+        <input class="field" id="name" name="Name" type="text" placeholder="Имя и фамилия">
         <label class="visually-hidden" for="email">Электронная почта.</label>
-        <input class="field" type="email" name="email" id="e-mail" placeholder="email@example.com" required>
+        <input class="field" id="e-mail" name="email" type="email" placeholder="email@example.com" required>
         <label class="visually-hidden" for="text">Поле ввода.</label>
-        <textarea class="field" name="textarea" id="text" rows="6" placeholder="В свободной форме" required></textarea>
+        <textarea class="field" id="text" name="textarea" placeholder="В свободной форме" required rows="6"></textarea>
         <button class="button button-red" type="submit">Отправить</button>
       </form>
     </div>

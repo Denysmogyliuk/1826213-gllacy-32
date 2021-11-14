@@ -316,8 +316,6 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  text-decoration: none;
-  color: inherit;
 }
 
 .popover-bucket-button-container {
@@ -653,15 +651,15 @@ body {
   content: "";
 }
 
-.login-form .field:first-child {
+.login-form .field:first-of-type {
   box-sizing: border-box;
   margin-bottom: 18px;
   width: 100%;
 }
 
-.login-form .field:nth-child(2) {
+.login-form .field:nth-of-type(2) {
   box-sizing: border-box;
-  margin-bottom: 33px;
+  margin-bottom: 53px;
   width: 100%;
 }
 

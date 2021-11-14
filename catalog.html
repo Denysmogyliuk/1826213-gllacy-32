@@ -14,8 +14,9 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="index.html"><img class="header-logo" src="images/logo.svg" alt="Логотип магазина Глейси."
-                width="137" height="56" /></a>
+            <a href="index.html">
+              <img class="header-logo" src="images/logo.svg" alt="Логотип магазина Глейси." width="137" height="56" />
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link active-link navigation-catalog-link" href="catalog.html">
@@ -24,20 +25,20 @@
             <div class="catalog-menu-container">
               <ul class="catalog-menu-list">
                 <li class="catalog-menu-item">
-                  <a href="#" class="catalog-menu-link">Новинки</a>
+                  <a class="catalog-menu-link" href="#">Новинки</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="catalog-menu-link catalog-menu-active-link">Сливочное</a>
+                  <a class="catalog-menu-link catalog-menu-active-link" href="#">Сливочное</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="catalog-menu-link">Щербеты</a>
+                  <a class="catalog-menu-link" href="#">Щербеты</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="catalog-menu-link">Фруктовый
+                  <a class="catalog-menu-link" href="#">Фруктовый
                     лед</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="catalog-menu-link">Мелорин</a>
+                  <a class="catalog-menu-link" href="#">Мелорин</a>
                 </li>
               </ul>
             </div>
@@ -54,7 +55,7 @@
             <a class="header-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="navigation-user-link navigation-search-link">
+            <a class="navigation-user-link navigation-search-link" href="#">
               <svg class="navigation-search-icon" aria-hidden="true" focusable="false" width="16" height="16"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -79,7 +80,7 @@
             </div>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="navigation-user-link navigation-login-link">
+            <a class="navigation-user-link navigation-login-link" href="#">
               <svg class="navigation-login-icon" aria-hidden="true" focusable="false" width="16" height="16"
                 viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -88,19 +89,21 @@
               </svg>
               Вход
             </a>
-
             <div class="popover-login">
               <div class="popover-login-container">
                 <h3 class="popover-login-header">Личный кабинет</h3>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <input class="field" name="email" type="email" placeholder="email@example.com" required>
-                  <input class="field" name="pass" type="password"
+                  <label class="visually-hidden" for="login-email">Введите электронную почту.</label>
+                  <input class="field" id="login-email" name="email" type="email" placeholder="email@example.com"
+                    required>
+                  <label class="visually-hidden" for="login-password">Введите пароль.</label>
+                  <input class="field" id="login-password" name="pass" type="password"
                     placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" required>
                   <div class="button-login-container">
                     <button class="button button-red" type="submit">Войти</button>
                     <div class="forgot-register-container">
-                      <a href="#" class="login-forgot">Забыли пароль?</a>
-                      <a href="#" class="login-register">Регистрация</a>
+                      <a class="login-forgot" href="#">Забыли пароль?</a>
+                      <a class="login-register" href="#">Регистрация</a>
                     </div>
                   </div>
                 </form>
@@ -108,7 +111,7 @@
             </div>
           </li>
           <li class="navigation-user-item">
-            <a href="#" class="navigation-user-link navigation-catalog-bucket-link">
+            <a class="navigation-user-link navigation-catalog-bucket-link" href="#">
               <svg class="navigation-bucket-icon" aria-hidden="true" focusable="false" width="17" height="16"
                 viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -117,13 +120,12 @@
               </svg>
               2 товара
             </a>
-
             <div class="popover-full-bucket">
               <div class="popover-bucket-container">
                 <h3 class="popover-bucket-full-header">Корзина</h3>
                 <ul class="popover-bucket-list">
                   <li class="popover-bucket-item">
-                    <img src="images/catalog/photo-1.png" alt="Мороженое Малинка." class="popover-bucket-photo"
+                    <img class="popover-bucket-photo" src="images/catalog/photo-1.png" alt="Мороженое Малинка."
                       width="46" height="46">
                     <p class="popover-product-name">Малинка</p>
                     <p class="popover-product-description">1 кг х 310 ₽</p>
@@ -139,7 +141,7 @@
                     </button>
                   </li>
                   <li class="popover-bucket-item">
-                    <img src="images/catalog/photo-4.png" alt="Мороженое Бабл-гам." class="popover-bucket-photo"
+                    <img class="popover-bucket-photo" src="images/catalog/photo-4.png" alt="Мороженое Бабл-гам."
                       width="46" height="46">
                     <p class="popover-product-name">Бабл-гам</p>
                     <p class="popover-product-description">1,5 кг х 320 ₽</p>
@@ -157,7 +159,7 @@
                 </ul>
                 <div class="popover-bucket-button-container">
                   <button class="button button-red" type="button">Оформить заказ</button>
-                  <a href="" class="popover-bucket-total">Итого: 790 ₽</a>
+                  <span class="popover-bucket-total">Итого: 790 ₽</>
                 </div>
               </div>
             </div>
@@ -197,9 +199,11 @@
             <div class="range">
               <div class="range-wrapper-inputs">
                 <label class="filter-title">
-                  Цена:<input class="range-input" type="number" value="100" name="min-price" tabindex="-1">₽</label>
+                  Цена:<input class="range-input" type="number" value="100" name="min-price" tabindex="-1">₽
+                </label>
                 <label class="filter-title">
-                  – <input class="range-input" type="number" value="500" name="max-price" tabindex="-1">₽</label>
+                  – <input class="range-input" type="number" value="500" name="max-price" tabindex="-1">₽
+                </label>
               </div>
               <div class="range-scale-container">
                 <div class="range-scale">
@@ -221,28 +225,28 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="fatness" value="0%">
+                    <input class="visually-hidden control-input" name="fatness" type="radio" value="0%">
                     <span class="control-mark"></span>
                     <span class="control-label">0%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="fatness" value="to10%" checked>
+                    <input class="visually-hidden control-input" name="fatness" type="radio" value="to10%" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">до 10%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="fatness" value="to30%">
+                    <input class="visually-hidden control-input" name="fatness" type="radio" value="to30%">
                     <span class="control-mark"></span>
                     <span class="control-label">до 30%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="fatness" value="more30%">
+                    <input class="visually-hidden control-input" name="fatness" type="radio" value="more30%">
                     <span class="control-mark"></span>
                     <span class="control-label">выше 30%</span>
                   </label>
@@ -256,35 +260,35 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
+                    <input class="visually-hidden control-input" name="chocolate" type="checkbox" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">шоколадные</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="sugar" checked>
+                    <input class="visually-hidden control-input" name="sugar" type="checkbox" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">сахарные посыпки</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="fruits">
+                    <input class="visually-hidden control-input" name="fruits" type="checkbox">
                     <span class="control-mark"></span>
                     <span class="control-label">фрукты</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="syrip">
+                    <input class="visually-hidden control-input" name="syrip" type="checkbox">
                     <span class="control-mark"></span>
                     <span class="control-label">сиропы</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="james">
+                    <input class="visually-hidden control-input" name="james" type="checkbox">
                     <span class="control-mark"></span>
                     <span class="control-label">джемы</span>
                   </label>
@@ -292,7 +296,7 @@
               </ul>
             </div>
           </fieldset>
-          <button class="filter-button" type="submit" value="Применить">
+          <button class="filter-button" type="submit">
             Применить
           </button>
         </form>
@@ -300,21 +304,21 @@
       <section class="catalog">
         <ul class="catalog-list">
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-1.png" alt="Мороженое Малинка." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Малинка</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Сливочное мороженое с малиновым джемом
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">310 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -325,21 +329,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-2.png" alt="Мороженое Фисташка." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Фисташка</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Фисташковый пломбир с кусочками шоколада
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">340 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -350,19 +354,19 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-3.png" alt="Мороженое Черника." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Черника</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">Крем-брюле<br> с черничным джемом</p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">330 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -373,21 +377,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-4.png" alt="Мороженое Бабл-гам." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Бабл-гам</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Ванильный пломбир<br> со сладкой посыпкой
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">320 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -398,21 +402,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-5.png" alt="Мороженое Ежевика." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Ежевика</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Сливочное мороженое с ежевичным джемом
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">330 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -423,21 +427,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-6.png" alt="Мороженое Банан." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Банан</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Сливочный пломбир<br> с банановым вкусом
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">340 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -448,21 +452,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-7.png" alt="Мороженое Шоколадка." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Шоколадка</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Классический шоколадный пломбир
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">270 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -473,21 +477,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-8.png" alt="Мороженое Клубничка." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Клубничка</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Сливочный пломбир<br> с клубничным вкусом
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">300 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -498,19 +502,19 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-9.png" alt="Мороженое Лимон." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Лимон</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">Освежающий лимонный сорбет</p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">310 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -521,21 +525,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-10.png" alt="Мороженое Ментол." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Ментол</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Сливочный пломбир<br> с ментоловым сиропом
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">320 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -546,21 +550,21 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-11.png" alt="Мороженое Орешек." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Орешек</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">
                 Фисташковый пломбир с шоколадным сиропом
               </p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">360 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -571,19 +575,19 @@
             </div>
           </li>
           <li class="product-item">
-            <a href="#" class="product-photo-link">
+            <a class="product-photo-link" href="#">
               <img class="product-photo" src="images/catalog/photo-12.png" alt="Мороженое Крем-брюле." width="168"
                 height="168" />
             </a>
-            <a href="#" class="product-header-link" tabindex="-1">
+            <a class="product-header-link" href="#" tabindex="-1">
               <h3 class="product-item-header">Крем-брюле</h3>
             </a>
-            <a href="#" class="product-description-link" tabindex="-1">
+            <a class="product-description-link" href="#" tabindex="-1">
               <p class="product-description">Классическое<br> крем-брюле</p>
             </a>
             <div class="price-bucket-container">
               <p class="product-price">280 ₽/кг</p>
-              <a href="#" class="bucket-link">
+              <a class="bucket-link" href="#">
                 <span class="visually-hidden">В корзину.</span>
                 <svg class="bucket-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -646,45 +650,48 @@
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">VK.</span>
-              <img src="images/icons/vk.svg" alt="Логотип Вконтакте." class="social-icon" width="24" height="24">
+              <img class="social-icon" src="images/icons/vk.svg" alt="Логотип Вконтакте." width="24" height="24">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook.</span>
-              <img src="images/icons/facebook.svg" alt="Логотип Facebook." class="social-icon" width="24" height="24">
+              <img class="social-icon" src="images/icons/facebook.svg" alt="Логотип Facebook." width="24" height="24">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Instagram.</span>
-              <img src="images/icons/instagram.svg" alt="Логотип Instagram." class="social-icon" width="24" height="24">
+              <img class="social-icon" src="images/icons/instagram.svg" alt="Логотип Instagram." width="24" height="24">
             </a>
           </li>
         </ul>
       </section>
       <section class="footer-features">
+        <h2 class="visually-hidden">Дополнительная информация.</h2>
         <ul class="info-list">
           <li class="info-item">
-            <a href="#" class="info-item-link info-item-link-bold">Для поставщиков</a>
+            <a class="info-item-link info-item-link-bold" href="#">Для поставщиков</a>
           </li>
           <li class="info-item">
-            <a href="#" class="info-item-link">Наши документы</a>
+            <a class="info-item-link" href="#">Наши документы</a>
           </li>
           <li class="info-item">
-            <a href="#" class="info-item-link">О производстве</a>
+            <a class="info-item-link" href="#">О производстве</a>
           </li>
           <li class="info-item">
-            <a href="#" class="info-item-link">Экологические стандарты</a>
+            <a class="info-item-link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </section>
       <div class="copyright">
         <a href="https://www.htmlacademy.ru">
-          <img src="images/logo_htmlacademy.svg" alt="Логотип HTML Academy." class="logo" width="93" height="27" />
+          <img class="logo" src="images/logo_htmlacademy.svg" alt="Логотип HTML Academy." width="93" height="27" />
         </a>
         <p class="copyright-text">
-          Сделано в <a href="https://www.htmlacademy.ru">.html academy</a> &#169; 2021
+          Сделано в
+          <a href="https://www.htmlacademy.ru">
+            .html academy</a> &#169; 2021
         </p>
       </div>
     </footer>
