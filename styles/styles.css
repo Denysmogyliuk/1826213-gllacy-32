@@ -164,7 +164,7 @@ body {
 .filter-button {
   align-self: flex-end;
   padding: 8px 53px;
-  margin-top: 10px;
+  margin-bottom: 14px;
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -957,6 +957,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   margin-bottom: 16px;
@@ -996,7 +997,6 @@ body {
   justify-content: space-between;
   align-content: space-between;
   width: 807px;
-  min-height: 144px;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
@@ -1151,6 +1151,7 @@ body {
 
 .filter-category {
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
   border: none;
 }
@@ -1392,7 +1393,7 @@ body {
 }
 
 .catalog-filter {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .popular-list {
