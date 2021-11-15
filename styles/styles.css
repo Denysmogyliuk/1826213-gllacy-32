@@ -2130,6 +2130,7 @@ body {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .modal-feedback {
@@ -2160,7 +2161,7 @@ body {
   flex-direction: column;
 }
 
-.modal-feedback-form .field:first-of-type {
+.modal-feedback-form .field:nth-of-type(1) {
   margin-bottom: 18px;
 }
 
@@ -2168,8 +2169,8 @@ body {
   margin-bottom: 18px;
 }
 
-.modal-feedback-form .field {
-  margin-bottom: 36px;
+.modal-feedback-form .field:nth-last-child(2) {
+  margin-bottom: 34px;
   resize: none;
 }
 
