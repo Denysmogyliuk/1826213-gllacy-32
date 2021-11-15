@@ -2008,6 +2008,7 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 430px 1fr 1fr;
+  width: 1170px;
   margin: 48px auto;
 }
 
