@@ -1597,13 +1597,14 @@ body {
 
 .subscribe-description {
   margin: 0;
-  margin-bottom: auto;
+  margin-bottom: 16px;
   color: #565c66;
 }
 
 .subscribe-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   margin: 6px;
   padding: 26px;
@@ -1887,7 +1888,7 @@ body {
 
 .contacts-phone-worktime {
   margin: 0;
-  margin-bottom: auto;
+  margin-bottom: 30px;
   color: #565c66;
   font-size: 14px;
 }
