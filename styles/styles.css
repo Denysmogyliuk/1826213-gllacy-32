@@ -738,13 +738,15 @@ body {
 .navigation-login-icon {
   position: absolute;
   left: 16px;
-  bottom: 6px;
+  bottom: 50%;
+  transform: translateY(50%);
 }
 
 .navigation-bucket-icon {
   position: absolute;
   left: 16px;
-  bottom: 6px;
+  bottom: 50%;
+  transform: translateY(50%);
 }
 
 .slider-container {
