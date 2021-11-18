@@ -1769,16 +1769,7 @@ body {
   margin: 0;
 }
 
-.delivery-container-date {
-  display: flex;
-}
-
-.delivery-container-phone {
-  display: flex;
-}
-
-.delivery-container-address {
-  display: flex;
+.field-group:nth-child(n+3) {
   grid-column: 1/3;
 }
 
