@@ -211,7 +211,8 @@ body {
 }
 
 .popover-bucket-container {
-  transform: translate(-323px, 8px);
+  transform: translateY(8px);
+  right: 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -226,9 +227,9 @@ body {
 
 .popover-bucket-container::before {
   position: absolute;
-  top: -45px;
+  top: -8px;
   right: -5px;
-  height: 45px;
+  height: 8px;
   width: 130px;
   content: "";
 }
@@ -338,7 +339,6 @@ body {
 
 .navigation-link {
   position: relative;
-  z-index: 3;
   display: block;
   padding: 6px 14px;
   font-size: 16px;
@@ -378,15 +378,17 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
-  margin: 18px auto 19px;
+  margin: 12px auto 19px;
 }
 
 .navigation-item {
   margin-left: 2px;
+  margin-top: 8px;
 }
 
 .navigation-item:first-child {
   margin-left: 0;
+  margin-bottom: 0;
 }
 
 .navigation-item:nth-child(2) {
@@ -427,6 +429,10 @@ body {
   height: 45px;
   width: 140px;
   content: "";
+}
+
+.navigation-catalog-link {
+  z-index: 3;
 }
 
 .navigation-item:focus-within .catalog-menu-container,
@@ -491,6 +497,7 @@ body {
 
 .navigation-user-item {
   position: relative;
+  margin-top: 8px;
   margin-left: 16px;
 }
 
@@ -502,6 +509,7 @@ body {
 
 .header-phone {
   display: block;
+  padding: 6px 0;
   margin-right: 2px;
   font-weight: 700;
   line-height: 20px;
@@ -512,7 +520,6 @@ body {
 
 .navigation-user-link {
   position: relative;
-  z-index: 3;
   display: block;
   padding: 4px 14px 4px 40px;
   font-size: 14px;
@@ -545,6 +552,7 @@ body {
 }
 
 .navigation-search-link {
+  z-index: 3;
   padding: 14px;
 }
 
@@ -556,7 +564,8 @@ body {
 .popover-search {
   z-index: 2;
   position: absolute;
-  transform: translate(-322px, 8px);
+  top: 40px;
+  right: 0;
   display: none;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -628,7 +637,8 @@ body {
 .popover-login-container {
   position: absolute;
   z-index: 2;
-  transform: translate(-328px, 8px);
+  transform: translateY(8px);
+  right: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -641,9 +651,9 @@ body {
 
 .popover-login-container::before {
   position: absolute;
-  top: -45px;
+  top: -8px;
   right: -5px;
-  height: 45px;
+  height: 8px;
   width: 105px;
   content: "";
 }
@@ -699,7 +709,8 @@ body {
 
 .popover-bucket {
   position: absolute;
-  transform: translate(-188px, 8px);
+  transform: translateY(8px);
+  right: 0;
   z-index: 2;
   display: none;
   border-radius: 4px;
@@ -710,9 +721,9 @@ body {
 
 .popover-bucket::before {
   position: absolute;
-  top: -45px;
+  top: -8px;
   right: -5px;
-  height: 45px;
+  height: 8px;
   width: 110px;
   content: "";
 }
@@ -944,7 +955,6 @@ body {
 .inner-header {
   width: 1170px;
   margin: 32px auto 40px;
-  margin-top: 32px;
 }
 
 .breadcrumbs {
