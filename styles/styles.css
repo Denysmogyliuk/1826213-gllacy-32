@@ -212,7 +212,7 @@ body {
 
 .popover-bucket-container {
   transform: translate(-323px, 8px);
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -226,10 +226,10 @@ body {
 
 .popover-bucket-container::before {
   position: absolute;
-  top: -8px;
-  right: 0;
-  height: 8px;
-  width: 100px;
+  top: -45px;
+  right: -5px;
+  height: 45px;
+  width: 130px;
   content: "";
 }
 
@@ -273,6 +273,8 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+  color: inherit;
+  text-decoration: none;
 }
 
 .popover-product-description {
@@ -282,6 +284,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #b9b9b9;
+  text-decoration: none;
 }
 
 .popover-product-price {
@@ -334,6 +337,8 @@ body {
 }
 
 .navigation-link {
+  position: relative;
+  z-index: 3;
   display: block;
   padding: 6px 14px;
   font-size: 16px;
@@ -408,7 +413,7 @@ body {
 .catalog-menu-container {
   position: absolute;
   transform: translateY(8px);
-  z-index: 1;
+  z-index: 2;
   display: none;
   box-sizing: border-box;
   background-color: #fcfcfc;
@@ -417,21 +422,15 @@ body {
 }
 
 .catalog-menu-container::before {
-  transform: translateY(-10px);
   position: absolute;
-  height: 10px;
+  top: -45px;
+  height: 45px;
   width: 140px;
   content: "";
 }
 
-.navigation-item:focus-within .catalog-menu-container {
-  display: block;
-}
-
-.navigation-catalog-link:hover + .catalog-menu-container {
-  display: block;
-}
-
+.navigation-item:focus-within .catalog-menu-container,
+.navigation-catalog-link:hover + .catalog-menu-container,
 .catalog-menu-container:hover {
   display: block;
 }
@@ -496,12 +495,9 @@ body {
 }
 
 .main-container {
-  flex-grow: 1;
-}
-
-.main-inner {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .header-phone {
@@ -516,6 +512,7 @@ body {
 
 .navigation-user-link {
   position: relative;
+  z-index: 3;
   display: block;
   padding: 4px 14px 4px 40px;
   font-size: 14px;
@@ -551,18 +548,15 @@ body {
   padding: 14px;
 }
 
-.navigation-search-link:hover + .popover-search {
-  display: block;
-}
-
+.navigation-search-link:hover + .popover-search,
 .navigation-user-item:focus-within .popover-search {
   display: block;
 }
 
 .popover-search {
+  z-index: 2;
   position: absolute;
   transform: translate(-322px, 8px);
-  z-index: 1;
   display: none;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -580,10 +574,10 @@ body {
 
 .popover-search::before {
   position: absolute;
-  top: -8px;
-  right: 0;
-  height: 8px;
-  width: 80px;
+  top: -45px;
+  right: -5px;
+  height: 45px;
+  width: 55px;
   content: "";
 }
 
@@ -647,10 +641,10 @@ body {
 
 .popover-login-container::before {
   position: absolute;
-  top: -8px;
-  right: 0;
-  height: 8px;
-  width: 100px;
+  top: -45px;
+  right: -5px;
+  height: 45px;
+  width: 105px;
   content: "";
 }
 
@@ -698,10 +692,7 @@ body {
   line-height: 30px;
 }
 
-.navigation-bucket-link:hover + .popover-bucket {
-  display: block;
-}
-
+.navigation-bucket-link:hover + .popover-bucket,
 .navigation-user-item:focus-within .popover-bucket {
   display: block;
 }
@@ -709,7 +700,7 @@ body {
 .popover-bucket {
   position: absolute;
   transform: translate(-188px, 8px);
-  z-index: 1;
+  z-index: 2;
   display: none;
   border-radius: 4px;
   background-color: #fcfcfc;
@@ -719,10 +710,10 @@ body {
 
 .popover-bucket::before {
   position: absolute;
-  top: -8px;
-  right: 0;
-  height: 8px;
-  width: 100px;
+  top: -45px;
+  right: -5px;
+  height: 45px;
+  width: 110px;
   content: "";
 }
 
@@ -1186,8 +1177,9 @@ body {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 6px;
   height: 6px;
   background-color: #2d3440;
@@ -1310,7 +1302,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 40px 200px 40px 40px;
   height: 100%;
   border-radius: 16px;
 }
@@ -1341,7 +1333,9 @@ body {
   padding: 32px;
   min-height: 156px;
   background-color: #eed5dc;
-  background-image: url("../images/backgrounds/news.png");
+  background-position: top right;
+  background-size: cover;
+  background-image: url("../images/backgrounds/news.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
 }
@@ -1425,7 +1419,8 @@ body {
   border-radius: 8px;
 }
 
-.product-item:hover .product-photo {
+.product-item:hover .product-photo,
+.product-photo-link:focus .product-photo {
   transition: transform 0.2s ease;
   transform: scale(1.02) translateY(-10px);
 }
@@ -1520,8 +1515,10 @@ body {
   margin-bottom: 80px;
   background-color: #f8e1b2;
   border-radius: 16px;
-  background-image: url("../images/backgrounds/vaffle-background.png");
+  background-image: url("../images/backgrounds/vaffle-background.jpg");
   background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
 }
 
 .features-container {
@@ -1603,7 +1600,9 @@ body {
   min-height: 220px;
   background-color: #ccb6d7;
   border-radius: 16px;
-  background-image: url("../images/backgrounds/post.png");
+  background-position: top right;
+  background-size: cover;
+  background-image: url("../images/backgrounds/post.jpg");
   background-repeat: no-repeat;
 }
 
@@ -1703,8 +1702,10 @@ body {
   min-height: 534px;
   background-color: #dac9ba;
   border-radius: 16px;
-  background-image: url("../images/backgrounds/delivery.png");
+  background-image: url("../images/backgrounds/delivery.jpg");
   background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
 }
 
 .delivery-description-container {
@@ -1846,8 +1847,10 @@ body {
   width: 1170px;
   margin: 0 auto;
   background-color: #edc2b0;
-  background-image: url("../images/backgrounds/contacts.png");
+  background-image: url("../images/backgrounds/contacts.jpg");
   background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -1926,7 +1929,7 @@ body {
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
 
-.pagination-container button {
+.pagination-container .button {
   border-color: #ffcbd8;
   grid-column: 2/3;
   justify-self: center;
