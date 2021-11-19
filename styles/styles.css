@@ -1769,7 +1769,7 @@ body {
   margin: 0;
 }
 
-.field-group:nth-child(n+3) {
+.field-group:nth-of-type(n+3) {
   grid-column: 1/3;
 }
 
